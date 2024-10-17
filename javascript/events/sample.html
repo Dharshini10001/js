@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="info">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde, odit reiciendis sequi quod molestias
+            voluptatem qui quibusdam ratione inventore non corporis, reprehenderit rem amet maxime itaque. Maiores,
+            blanditiis error?</p>
+    </div>
+    <div id="demo">
+
+    </div>
+    <input type="text" id="key">
+    <div id="click">
+
+    </div><br>
+    <input type="text" id="up">
+    <h3 id="upclick">
+    </h3>
+    <script>
+        const info = document.getElementById('info');
+        info.onmouseenter = () => {
+            document.getElementById('demo').innerText += "Here!!!"
+        }
+
+        const key = document.getElementById('key');
+        key.onkeydown = () => {
+            document.getElementById('click').innerText += key.value
+        }
+
+        const keyup = document.getElementById('up');
+        keyup.onkeyup = () =>{
+            document.getElementById('upclick').innerText += keyup.value
+        }
+
+    </script>
+
+</body>
+
+</html>

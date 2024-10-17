@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .page {
+            display: none;
+            padding: 0 0.5em;
+            font-size: 1.5em;
+        }
+
+        #loading {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(192, 192, 192, 0.5);
+            background-image: url('https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur rem ab numquam dolor explicabo eligendi
+            doloribus repellendus. Maiores sed laborum, itaque a consectetur eligendi earum iste nam libero magni
+            repellat!\</h1>
+    </div>
+    <div id="loading"></div>
+    <script>
+        function onReady(item) {
+            var intervalid = window.setInterval(function(){
+                if (document.getElementsByTagName('body')[0] !== 'undefined') {
+                    window.clearInterval(intervalid)
+                    item.call(this);
+                }
+            }, 5000)
+
+        }
+        function setVisible(selector,bool){
+            document.querySelector(selector).style.display = bool ? 'block':'none';
+
+        }
+
+        onReady(()=>{
+            setVisible('.page',true)
+            setVisible('#loading',false)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.main {
+    background: url('Mountains Concept Art.jfif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-size: calc(12px + 1vw);
+}
+
+.main .span-1,
+.main .span,
+.main .span-2 {
+    font-size: calc(40px + 2vw);
+    letter-spacing: calc(20px + 2vw);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 1px 10px white;
+}
+
+.banner-1,
+.banner-3,
+.banner-4 {
+    background-size: cover;
+    color: white;
+    /* padding: 5vh 0; */
+    text-align: center;
+    background: url('texture.jpg');
+}
+.banner-6{
+    background:url('bg-5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+}
+.banner-2 {
+    background-image: url('bg-banner-1.jpg');
+    background-size: cover;
+    color: white;
+    padding: 5vh 0;
+    text-align: center;
+    
+}
+.ban2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-2 .banner-img {
+    max-width: 100%;
+    height: 250px;
+    margin: 2vh 0;
+}
+
+.banner-4 .banner-img {
+    max-width: 100%;
+    height: 200px;
+    /* margin: 2vh 0; */
+}
+
+.con {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.con img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.con span {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: calc(16px + 0.5vw);
+    color: white;
+    text-shadow: 0px 1px 5px black;
+}
+
+.con:hover img {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: white;
+}
+
+.card-body .title {
+    font-size: calc(20px + 0.5vw);
+}
+
+.banner-5 h1 {
+    font-size: calc(40px + 2vw);
+    text-shadow: 0px 1px 10px white;
+}
+
+.banner-5 button {
+    margin-top: 3vh;
+    font-size: calc(18px + 1vw);
+    padding: 1vh 2vw;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner-5 button:hover {
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 10vh 0;
+        text-align: center;
+    }
+
+    .banner-2,
+    .banner-4,
+    .banner-5 {
+        padding: 10vh 0;
+    }
+
+    .banner-2 .banner-img,
+    .banner-4 .banner-img {
+        width: 80%;
+        margin: 2vh auto;
+    }
+
+    .con span {
+        font-size: calc(14px + 1vw);
+    }
+
+    .banner-5 button {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        font-size: calc(10px + 1vw);
+    }
+
+    .main .span-1,
+    .main .span,
+    .main .span-2 {
+        font-size: calc(30px + 2vw);
+    }
+
+    .banner-2 .banner-img,
+    .banner-4 .banner-img {
+        width: 100%;
+        margin: 2vh 0;
+    }
+
+    .con span {
+        font-size: calc(12px + 1vw);
+    }
+
+    .banner-5 button {
+        width: 90%;
+    }
+}

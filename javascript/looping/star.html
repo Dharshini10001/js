@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // for (i = 0; i <= 5; i++) {
+        //     for (j = i; j > 0; j--) {
+        //         document.write('*');
+        //     }
+        //     document.write('*' + '<br>');
+        // }
+
+        // reverse
+        // for (x = 0; x <= 5; x++) {
+        //     for (y = x; y<=4; y++) {
+        //         document.write('*');
+        //     }
+        //     document.write('*' + '<br>');
+        // }
+
+        // var a = Number(prompt("Enter a Number:"));
+        // document.write("The Number is:", a + '<br>');
+        // for (b = 0; b <= a/3; b++) {
+        //     for (c = b; c >0; c--) {
+        //         document.write("*")
+        //     }
+        //     document.write('*' + '<br>');
+        // }
+        // for(p=1;p<=5;p++){
+        //     document.write("*" +"<br>")
+        // }
+        let row = 5
+        let star = '';
+        for (let i = 1; i <= row; i++){
+            
+            for (let j = 1; j <= row - i; j++){
+                 star += ' '
+            }
+            
+            for (let k = 0; k < 2 * i - 1; k++) {
+                star += '*'
+            }
+            // star += '<br>'
+            star += '\n'
+        }
+    document.write(star);
+    console.log(star);
+    
+      
+
+    </script>
+</body>
+
+</html>

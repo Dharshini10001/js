@@ -1,0 +1,554 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    /* overflow: hidden; */
+    background-color: black;
+}
+
+.page {
+    display: none;
+    /* padding: 0 0.5em; */
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100%;
+    background-color: white;
+    background-image: url('../game.html/image_processing20210829-19951-1o4v17l.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second-card-2 {
+    margin-top: 80px;
+    height: 60px;
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding-bottom: 10px;
+    z-index: 5;
+}
+
+.second-card-2 a {
+    color: white;
+}
+
+.second-card-2 a:hover {
+    color: white;
+}
+
+.second-card-2 .dropdown-menu {
+    background-color: black;
+    color: white;
+}
+
+.right-navbar {
+    text-align: right;
+}
+
+.full-width-drop {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.big-first-cards {
+    background: url('background.webp');
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+.card-1 {
+    z-index: 3;
+}
+
+.first-card {
+    height: auto;
+    width: 33%;
+}
+
+.first-row-card1 {
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+.first-row-card1 h1 {
+    font-size: 25px;
+}
+
+.first-row-card1 svg {
+    color: red;
+}
+
+.carousel-inner .carousel-item img :hover .carousel-control-prev {
+    display: block;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: red;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.first-row {
+    background-color: transparent;
+}
+
+.image-container {
+    position: relative;
+}
+
+.normal-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-container:hover .hover-image {
+    opacity: 1;
+}
+
+.image-container:hover .normal-image {
+    opacity: 0;
+}
+
+.card1-select {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card1-select-option {
+    border-radius: 20px;
+}
+
+.picture {
+    transition: 1.2s;
+}
+
+.picture-container:hover .picture {
+    transform: scale(1.1);
+}
+
+.card-title-off {
+    background-color: red;
+    padding: 5px;
+    font-size: 16px;
+    width: 22%;
+    color: white;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+.card-title-back {
+    background-color: red;
+    padding: 5px;
+    font-size: 16px;
+    width: 40%;
+    color: white;
+    border-radius: 10px;
+    font-family: cursive;
+}
+
+@media only screen and (max-width: 576px) {
+    .block-card-image {
+        margin-top: 10px;
+    }
+
+    .block-card-image h3 {
+        font-size: 16px;
+    }
+
+    .block-card-image a {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .card-title-back {
+        background-color: red;
+        padding: 5px;
+        font-size: 12px;
+        width: 40%;
+        color: white;
+        border-radius: 10px;
+        font-family: cursive;
+    }
+
+    .card-title-off {
+        background-color: red;
+        padding: 5px;
+        font-size: 12px;
+        width: 22%;
+        color: white;
+        border-radius: 10px;
+        font-family: cursive;
+    }
+
+    .contain-3-a {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .block-card-image {
+        margin-top: 10px;
+    }
+
+    .block-card-image h3 {
+        font-size: 20px;
+    }
+
+    .block-card-image a {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .card-title-back {
+        background-color: red;
+        padding: 5px;
+        font-size: 16px;
+        width: 50%;
+        color: white;
+        border-radius: 10px;
+        font-family: cursive;
+
+    }
+
+    .card-title-off {
+        background-color: red;
+        padding: 5px;
+        font-size: 16px;
+        width: 22%;
+        color: white;
+        border-radius: 10px;
+        font-family: cursive;
+    }
+
+    .block-card-1 {
+        margin-right: 10px;
+    }
+
+}
+
+
+
+.section-2 {
+    display: flex;
+}
+
+.sec-2 {
+    width: 18%;
+    /* border: black 1px solid; */
+}
+
+.contain-3-ul li {
+    list-style-type: style none;
+    display: inline;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container-3 {
+    width: 100%;
+    height: 150px;
+    background-color: black;
+
+}
+
+.contain-3-ul li svg {
+    padding-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.contain-3-ul li:first-child {
+    color: red;
+}
+
+.contain-3-ul li:hover {
+    color: red;
+}
+
+.card-3 {
+    background: url('background2.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.contain-3-a {
+
+    background-color: red;
+    text-decoration: none;
+    height: 40px;
+    width: 250px;
+    margin: auto;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 576px) {
+    .contain-3-a {
+        width: 100%;
+    }
+
+}
+
+.card-length {
+    padding-top: 450px;
+}
+
+.section-4 {
+    background: url('background3.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.fourth-card  {
+    margin-top: 150px;
+}
+
+.lines-sec {
+    text-align: center;
+}
+
+.line {
+    list-style-type: none;
+    /* display: inline; */
+    height: auto;
+    width: 200px;
+    padding: 10px;
+    border: white 1px solid;
+    color: red;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.clearfix ::after,
+.clearfix::before {
+    content: " ";
+    clear: both;
+    display: table;
+}
+
+.sec-7-input::placeholder {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer {
+    background-color: red;
+    margin-top: 30px;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+.footer-div {
+    width: 35%;
+    margin-left: 40px;
+}
+
+.div-foot {
+    width: 25%;
+    margin-left: 40px;
+}
+
+.footers-foots {
+    background-color: red;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .sec-7-input {
+        width: 80px;
+        height: 25px;
+    }
+
+    .sec-7-input::placeholder {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .span-svg {
+        margin-top: 40px;
+    }
+}
+
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.dropdown-btn {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    /* Full screen width */
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1;
+    display: flex;
+    /* Flex layout to split into columns */
+    justify-content: space-around;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    /* Show on hover */
+}
+
+/* Column styling */
+.column {
+    flex-basis: 24%;
+    /* Roughly one-fourth of the full width */
+    display: flex;
+    flex-direction: column;
+}
+
+.column a {
+    padding: 8px 0;
+    text-decoration: none;
+    color: black;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+
+/* Base styles for cards */
+.card {
+    margin-bottom: 1rem;
+    /* Space between cards when they stack */
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1201px) {
+    .big-first-cards {
+        display: flex;
+    }
+
+    .card-1 {
+        max-width: 66%;
+    }
+
+
+
+    /* .card-1 .row {
+        display: flex;
+        flex-wrap: wrap;
+    }  */
+    .card-1-block {
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+}
+
+/* For screens between 768px and 1200px (Tablet view) */
+@media (max-width: 1200px) {
+    .first-row {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .card-1 .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+
+    .card-1-block {
+        display: flex;
+    }
+
+    .block-card {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
+/* For screens less than 768px (Mobile view) */
+@media (max-width: 767px) {
+    .first-row {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-1 .row {
+        flex-direction: column;
+    }
+
+    .card-1 .col {
+        width: 100%;
+        /* Full width */
+    }
+
+    .card-1-block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block-card {
+        width: 100%;
+        height: auto;
+    }
+}

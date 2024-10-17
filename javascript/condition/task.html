@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var mark1 = Number(prompt("Enter your Tamil Mark:"))
+        document.write("Your Tamil Mark is :" , mark1 +"<br>")
+        var mark2 = Number(prompt("Enter your English Mark:"))
+        document.write("Your English Mark is :"  ,  mark2 +"<br>")
+        var mark3 = Number(prompt("Enter your Maths Mark: "))
+        document.write("Your Maths Mark is :"  , mark3 +"<br>")
+        var mark4 = Number(prompt("Enter your Science Mark:"))
+        document.write("Your Science Mark is : " , mark4 + "<br>")
+        var mark5 = Number(prompt("Enter your Social Mark:"))
+        document.write("your Social Mark is:" , mark5 + "<br>");
+
+
+        var total;
+        total = mark1 + mark2 + mark3 + mark4 + mark5;
+        document.write('your Total is:'  + "<br>",total)
+        
+        
+        var avg;
+        avg = total/5;
+        document.write('your Average is'  + "<br>",avg)
+
+        if (avg >= 30 && avg <= 100) {
+
+            document.write('your are Pass' + "<br>");
+            if (avg <= 100 && avg >= 80) {
+                document.write("Grade A "  + "<br>")
+            }
+            else if (avg < 80 && avg >= 65) {
+                document.write("Grade B"  + "<br>")
+            }
+            else if (avg < 65 && avg >= 40) {
+                document.write("Grade D"  + "<br>")
+            }
+            else {
+                document.write("Grade E"  + "<br>" )
+
+            }
+
+        }
+        else {
+            document.write('Your are Fail')
+        }
+
+    </script>
+
+</body>
+
+</html>

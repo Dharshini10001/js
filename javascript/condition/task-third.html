@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter first Number:'));
+        document.write('First number:', a + '<br>');
+        var b = Number(prompt('enter second number:'));
+        document.write('Second number:', b + '<br>');
+        var c = Number(prompt('enter third number:'));
+        document.write('third number:', c + '<br>');
+        var d = Number(prompt('enter fourth number:'));
+        document.write('fourth number:', d + '<br>');
+
+
+
+        if (a > b && a > c && a > d) {
+            document.write('first greatest number:', a);
+
+            if (b > c && b > d) {
+                document.write('second greatest number:', b);
+                if (c > d) {
+                    document.write('third greatest number:', c);
+                    document.write('last number:', d);
+                    document.write(a, b, c, d);
+                }
+                else {
+                    document.write('third greatest:', d);
+                    document.write('last number:', c);
+
+                }
+            }
+
+        }
+        else if (b > c && b > d && b > a) {
+            document.write('first greatest number:', b);
+
+            if (c > d && c > a) {
+                document.write('second greatest number:', c);
+
+                if (d > a) {
+                    document.write('third greatest number:', d);
+                    document.write('last greatest:', a);
+                    document.write(b, c, d, a);
+                }
+                else {
+                    document.write('third greatest:', a);
+                    document.write('last number:', d);
+                }
+            }
+        }
+        else if (c > d && c > a && c > b) {
+            document.write('first greatest number:', c);
+            if (d > a && d > a) {
+                document.write('second greatest number:', d);
+                if (a > b) {
+                    document.write('third greatest number:', a);
+                    document.write('last greatest:', b);
+                    document.write(c, d, a, b);
+                }
+                else {
+                    document.write('third greatest:', b);
+                    document.write('last number:', a);
+                }
+            }
+        }
+        else {
+            if (a > b && a > c) {
+                document.write('second greatest number:', a);
+                if (b > c) {
+                    document.write('third greatest number:', b);
+                    document.write('last greatest:', c);
+                    document.write(d, a, b, c);
+
+                }
+                else {
+                    document.write('third greatest:', c);
+                    document.write('last number:', b);
+
+                }
+            }
+            document.write('first greatest number:', d);
+        }
+
+    </script>
+</body>
+
+</html>

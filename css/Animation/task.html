@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #contain {
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        top: 200px;
+        left: 600px;
+        padding: 10px;
+        transition: all 1s;
+        box-shadow: 0 0 10px 10px rgb(226, 226, 226);
+        /* margin: 50px; */
+    }
+
+    #contain img {
+        margin-left: 10px;
+        height: 40px;
+        width: 150px;
+    }
+
+    #sub {
+        text-align: center;
+        height: 150px;
+        width: 400px;
+        background: linear-gradient(160deg, rgb(158, 206, 228), rgb(159, 226, 226), rgb(159, 226, 226), rgb(159, 226, 226), rgb(243, 221, 253), rgb(231, 202, 245), rgb(236, 195, 255));
+    }
+
+    #sub h4 {
+        padding-top: 45px;
+        color: black;
+        font-size: 18px;
+    }
+
+    #contain h4:nth-child(2) {
+        float: right;
+        left: 30px;
+    }
+
+    #contain #h3 {
+        position: absolute;
+        top: 400px;
+        left: 280px;
+        font-size: 18px;
+    }
+
+    #contain h5 {
+        color: rgb(80, 168, 202);
+    }
+
+    #contain #h52 {
+        position: relative;
+        bottom: 90px;
+        float: right;
+    }
+
+    #contain:hover {
+        /* transform: scale(1.3,1.3) */
+        transform: rotate(5deg) translate(30px);
+    }
+</style>
+
+<body>
+    <div id="contain">
+        <div id="sub">
+            <h3 id="subh3">
+                FULLSTACK
+                WEB  <br>DEVEOPLMENT <br> COURSE</h3>
+        </div>
+        <h4>4 Months</h4>
+        <h4>MERN STACK</h4>
+        <p>No 1 software training institute in Coimbatore. providing 100 % Placement Support to students both Freshers
+            and Experienced students.</p>
+        <img src="5star.jpg" alt="star">
+        <h3 id="h3">(140+ reviews)</h3>
+        <h5 id="h51">Rs 25,000</h5>
+        <h5 id="h52">Learn More ---</h5>
+    </div>
+</body>
+
+</html>

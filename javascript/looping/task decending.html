@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter the first number:'));
+        document.write('Your first number: ' + a + '<br>');
+        var b = Number(prompt('Enter the second number:'));
+        document.write('Your second number: ' + b + '<br>');
+        var c = Number(prompt('Enter the third number:'));
+        document.write('Your third number: ' + c + '<br>');
+        var d = Number(prompt('Enter the fourth number:'));
+        document.write('Your fourth number: ' + d + '<br>');
+
+
+        // var greatest = a;
+        // if (b > greatest) {
+        //     if (c > greatest) {
+        //         document.write('c is second greatest number:', c);
+        //     }else if(){
+        //         document.write('d is greatest number', d);
+        //     }else{
+
+        //     }
+        //     document.write('b is greatest number:', b);
+        // } else if (c > greatest) {
+        //     if (d > greatest) {
+        //         document.write('d is greatest number:', d);
+        //     } else {
+        //         document.write(' a is second greatest number:', a);
+        //     }
+        //     document.write('c is greastest number:', c)
+
+        // }else {
+        //     if (a > greatest) {
+        //         document.write('a is second greatest number:', a);
+        //     } else {
+        //         document.write('d is greatest number:', b);
+        //     }
+        //     document.write('d is greatest number:', d);
+        //}
+
+
+
+
+
+
+        var firstGreatest, secondGreatest, thirdGreatest, fourthGreatest;
+
+
+
+        
+        if (a > b && a > c && a > d) {
+            firstGreatest = a;
+            if (b > c && b > d) {
+                secondGreatest = b;
+                if (c > d) {
+                    thirdGreatest = c;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = c;
+                }
+            } else if (c > b && c > d) {
+                secondGreatest = c;
+                if (b > d) {
+                    thirdGreatest = b;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = b;
+                }
+            } else {
+                secondGreatest = d;
+                if (b > c) {
+                    thirdGreatest = b;
+                    fourthGreatest = c;
+                } else {
+                    thirdGreatest = c;
+                    fourthGreatest = b;
+                }
+            }
+        } else if (b > a && b > c && b > d) {
+            firstGreatest = b;
+            if (a > c && a > d) {
+                secondGreatest = a;
+                if (c > d) {
+                    thirdGreatest = c;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = c;
+                }
+            } else if (c > a && c > d) {
+                secondGreatest = c;
+                if (a > d) {
+                    thirdGreatest = a;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = a;
+                }
+            } else {
+                secondGreatest = d;
+                if (a > c) {
+                    thirdGreatest = a;
+                    fourthGreatest = c;
+                } else {
+                    thirdGreatest = c;
+                    fourthGreatest = a;
+                }
+            }
+        } else if (c > a && c > b && c > d) {
+            firstGreatest = c;
+            if (a > b && a > d) {
+                secondGreatest = a;
+                if (b > d) {
+                    thirdGreatest = b;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = b;
+                }
+            } else if (b > a && b > d) {
+                secondGreatest = b;
+                if (a > d) {
+                    thirdGreatest = a;
+                    fourthGreatest = d;
+                } else {
+                    thirdGreatest = d;
+                    fourthGreatest = a;
+                }
+            } else {
+                secondGreatest = d;
+                if (a > b) {
+                    thirdGreatest = a;
+                    fourthGreatest = b;
+                } else {
+                    thirdGreatest = b;
+                    fourthGreatest = a;
+                }
+            }
+        } else {
+            firstGreatest = d;
+            if (a > b && a > c) {
+                secondGreatest = a;
+                if (b > c) {
+                    thirdGreatest = b;
+                    fourthGreatest = c;
+                } else {
+                    thirdGreatest = c;
+                    fourthGreatest = b;
+                }
+            } else if (b > a && b > c) {
+                secondGreatest = b;
+                if (a > c) {
+                    thirdGreatest = a;
+                    fourthGreatest = c;
+                } else {
+                    thirdGreatest = c;
+                    fourthGreatest = a;
+                }
+            } else {
+                secondGreatest = c;
+                if (a > b) {
+                    thirdGreatest = a;
+                    fourthGreatest = b;
+                } else { 
+                    thirdGreatest = b;
+                    fourthGreatest = a;
+                }
+            }
+        }
+        document.write('Ascending order:',fourthGreatest + '<br>', thirdGreatest + '<br>', secondGreatest + '<br>', firstGreatest + '<br>');
+        document.write('descending order:',firstGreatest +'<br>', secondGreatest  +'<br>', thirdGreatest  +'<br>', fourthGreatest +'<br>');
+
+        // document.write('The fourth greatest number is:', fourth +'<br>');
+        // document.write('The third greatest number is:', third +'<br>');
+        // document.write('The second greatest number is:', second +'<br>');
+        // document.write('The greatest number is:', first +'<br>');
+    </script>
+</body>
+
+</html>

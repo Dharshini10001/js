@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contain1{
+    height: 55px;
+   
+}
+.contain1 li{
+    padding-left: 20px;
+}
+.last1 {
+    text-align: right;
+}
+.btn-d{
+    background-color: #dc3545;
+    color: gray;
+}
+.btn-d:hover{
+    color: #0d6efd;
+}
+.whole1{
+    width: 100%;
+    height:800px;
+    background-image: url('background.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col1 img{
+    height: 200px;
+}

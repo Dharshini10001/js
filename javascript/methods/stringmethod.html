@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      const text = '23 Hello World';
+      document.write(text + '<br>');
+      document.write('length:', text.length + '<br>');
+      document.write('tolowercase:', text.toLowerCase() + '<br>');
+      document.write('toUpperrcase:', text.toUpperCase() + '<br>');
+      document.write('includes:', text.includes('2') + '<br>');
+      document.write('concat:', text.concat('heloo idm techpark') + '<br>')
+      document.write('startwith:', text.startsWith('2')+'<br>');
+      document.write('endwith:', text.endsWith('2')+'<br>');
+      document.write('Alternate concat:', text+("heloo idm techpark") + '<br>')
+      document.write('charAt:', text.charAt(3) + '<br>');
+      document.write('charcodeAt:', text.charCodeAt(3) + '<br>');
+      document.write('Alternate CharAt:', text[5]+ '<br>')
+      document.write('slice:', text.slice(3,11) + '<br>');
+      document.write('slice:', text.slice(-12,-4) + '<br>');
+      document.write('substring:', text.substring(4.10) + '<br>');
+      document.write('substr:', text.substr(2,7) + '<br>');
+      document.write('repeat:', text.repeat(3) + '<br>')
+      const text1 = "               " +text+"      "
+      document.write('text1:', text1)
+      document.write('trim:', text1.trim());
+      document.write('trimStart:', text1.trimStart());
+      document.write('trimend:', text1.trimEnd());
+      
+
+      document.write('padstart:', text.padStart(20,'heloo idm techpark') + '<br>');
+      document.write('padEnd:', text.padEnd(20,'heloo idm techpark') + '<br>');
+      document.write('indexof:',text.indexOf('e'),+"<br>")
+
+      const text2 = text+'Hello idm Techpark'
+      document.write('text 2:',text2+'<br>');   
+      document.write('replace:',text2.replace('Hello','Hi.!.'+'<br>'));
+
+
+   
+ 
+
+
+
+
+
+
+
+   
+   </script>
+</body>
+
+</html>

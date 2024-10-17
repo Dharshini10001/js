@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    &#10095;
+    <div id="ol">
+
+    </div>
+    <script>
+        // const arr = [
+
+        const arrone = [{
+            SNo: '10',
+            Name: 'Gayathri',
+            Age: '29',
+            City: 'Dharmapuri',
+            PhoneNo: '857479908',
+            Whatsapp: '857479908',
+            Address: '21,old Raileay Station,Karur.',
+            Qualification: 'Bsc-Chemistry',
+            Percentage: '78%',
+            College: 'MCAS Colege '
+        },
+        {
+            SNo: '10',
+            Name: 'Gayathri',
+            Age: '29',
+            City: 'Dharmapuri',
+            PhoneNo: '857479908',
+            Whatsapp: '857479908',
+            Address: '21,old Raileay Station,Karur.',
+            Qualification: 'Bsc-Chemistry',
+            Percentage: '78%',
+            College: 'MCAS Colege '
+        },
+        {
+            SNo: '10',
+            Name: 'Gayathri',
+            Age: '29',
+            City: 'Dharmapuri',
+            PhoneNo: '857479908',
+            Whatsapp: '857479908',
+            Address: '21,old Raileay Station,Karur.',
+            Qualification: 'Bsc-Chemistry',
+            Percentage: '78%',
+            College: 'MCAS Colege '
+        },
+        {
+            SNo: '10',
+            Name: 'Gayathri',
+            Age: '29',
+            City: 'Dharmapuri',
+            PhoneNo: '857479908',
+            Whatsapp: '857479908',
+            Address: '21,old Railway Station,Karur.',
+            Qualification: 'Bsc-Chemistry',
+            Percentage: '78%',
+            College: 'MCAS Colege '
+        }]
+        // var listone =' ';\
+        let list = arrone.map((item) => {
+            return ( `
+            <ol>
+                 <li>${item.SNo}</li>
+                 <li>${item.Name}</li>
+                 <li>${item.Age}</li>
+                 <li>${item.City}</li>
+                 <li>${item.PhoneNo}</li>
+                 <li>${item.Whatsapp}</li>
+                 <li>${item.Address}</li>
+                 <li>${item.Qualification}</li>
+                 <li>${item.Percentage}</li>
+                 <li>${item.College}</li>
+            </ol>`)
+        })
+
+        // document.getElementById('ol').innerHTML=
+        document.getElementById('ol').innerHTML += list
+
+        // document.write(list)
+
+    </script>
+
+</body>
+
+</html>

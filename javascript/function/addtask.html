@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="division()">division</button>
+
+    <script>
+        var a =Number(prompt("Enter the First Number:"));
+        document.write("The first number is:",a +"<br>");
+        var b = Number(prompt("Enter Second Number:" ));
+        document.write("The Second Number is:",b +"<br>");
+
+        function add(){
+            document.write(a+b +'<br>');
+        }
+        function sub(){
+            document.write(a-b+'<br>');
+        }
+        function multiply(){
+            document.write(a*b);
+        }
+        function division(){
+            document.write(a/b)
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Parent {
+        //     static user = 0;
+        //     constructor(a, b) {
+        //         this.aone = a
+        //         this.bone = b
+        //         Parent.user += 1
+        //         console.log("read");
+        //     }
+        //     static add() {
+        //         document.write(Parent.user)
+        //     }
+        //     Print() {
+        //         document.write("hello world", this.aone + this.bone)
+        //     }
+        // }
+        // const P1 = new Parent(3, 4)
+        // P1.Print();
+        // const P2 = new Parent(4, 4)
+        // P2.Print();
+        // Parent.add()
+        // document.write(P1.user)
+
+        class employees {
+            // static candidate  = 0;
+            constructor(a) {
+                this.one = a
+                // employees.candidate += 1
+                console.log("read");
+            }
+            Print() {
+                document.write("first Employee:", this.one)
+            }
+        }
+        const first = new employees('Dharshini')
+        first.Print();
+//  -------------------------------------------------------------------------------------------------------------------
+
+        class balance {
+            static user = 0;
+            constructor(a, b, c) {
+                this.initial_amount = a
+                this.credit_account = b
+                this.debit_account = c
+                balance.user += 1
+                console.log("read");
+            }
+            static addition() {
+                document.write("hello world", this.initial_amount + this.credit_account)
+            }
+            Subraction() {
+                document.write("hello world", this.initial_amount - this.debit_account)
+            }
+        }
+        const q1 = new balance(5000, 500)
+        q1.addition();
+        const q2 = new balance(5000, 100)
+        q2.Subraction();
+        balance.addition()
+        document.write(q1.user)
+    </script>
+</body>
+
+</html>

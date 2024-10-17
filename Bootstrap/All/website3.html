@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="website3.css"> -->
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+
+  <div>
+   <ul class="d-none d-lg-flex justify-content-between mt-4">
+    <li class="list-group-item"><span class="d-flex list-group-item"><svg xmlns="http://www.w3.org/2000/svg" width="40"
+          height="40" padding="20px" fill="currentColor" class="bi bi-phone-vibrate" viewBox="0 0 16 16">
+          <path
+            d="M10 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM6 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h4a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+          <path
+            d="M8 12a1 1 0 1 0 0-2 1 1 0 0 0 0 2M1.599 4.058a.5.5 0 0 1 .208.676A7 7 0 0 0 1 8c0 1.18.292 2.292.807 3.266a.5.5 0 0 1-.884.468A8 8 0 0 1 0 8c0-1.347.334-2.619.923-3.734a.5.5 0 0 1 .676-.208m12.802 0a.5.5 0 0 1 .676.208A8 8 0 0 1 16 8a8 8 0 0 1-.923 3.734.5.5 0 0 1-.884-.468A7 7 0 0 0 15 8c0-1.18-.292-2.292-.807-3.266a.5.5 0 0 1 .208-.676M3.057 5.534a.5.5 0 0 1 .284.648A5 5 0 0 0 3 8c0 .642.12 1.255.34 1.818a.5.5 0 1 1-.93.364A6 6 0 0 1 2 8c0-.769.145-1.505.41-2.182a.5.5 0 0 1 .647-.284m9.886 0a.5.5 0 0 1 .648.284C13.855 6.495 14 7.231 14 8s-.145 1.505-.41 2.182a.5.5 0 0 1-.93-.364C12.88 9.255 13 8.642 13 8s-.12-1.255-.34-1.818a.5.5 0 0 1 .283-.648" />
+        </svg>
+        <h2>+012 345 6789</h2>
+      </span></li>
+    <li class="list-group-item "><span class="d-flex">
+        <h1 class="head1 bg-success">Farm</h1>
+        <h1 class="head2">Fresh</h1>
+      </span></li>
+    <li class="list-group-item">
+      <ul class="d-flex">
+        <li class="list-group-item m-2"><svg class="rounded-circle " xmlns="http://www.w3.org/2000/svg" width="35"
+            height="30" viewBox="0 0 448 512">
+            <path fill="green"
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z" />
+          </svg></li>
+        <li class="list-group-item m-2"><svg class="rounded-circle " xmlns="http://www.w3.org/2000/svg" width="35"
+            height="30" viewBox="0 0 512 512">
+            <path fill="green"
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+          </svg></li>
+        <li class="list-group-item m-2"><svg class="rounded-circle " xmlns="http://www.w3.org/2000/svg" width="35"
+            height="30" viewBox="0 0 448 512">
+            <path fill="green"
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg></li>
+        <li class="list-group-item m-2"><svg class="rounded-circle " xmlns="http://www.w3.org/2000/svg" width="35"
+            height="30" viewBox="0 0 448 512">
+            <path fill="green"
+              d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+          </svg></li>
+      </ul>
+    </li>
+  </ul> 
+</div>
+  
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarTogglerDemo01">
+      <a - class="navbar-brand" href="#">
+        <span class="d-flex">
+          <h1 class="head1">Farm</h1>
+          <h1 class="head2">Fresh</h1>
+        </span>
+      </a>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
+  <div id="carouselExampleFade" class="carousel slide carousel-fade ">
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="web3-c-1.jpg" class="d-block  w-100" alt="...">
+        <div class="row">
+          <div class="carousel-caption div1 container">
+            <h4 class="c">Organic Vegetables</h4>
+            <h1 class="d">Organic Fruits For Better <br>Health</h1>
+            <button class="but1 ">Explore</button>
+            <button class="but2 ">Contact</button>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item ">
+        <img src="web3-c-2.jpg" class="d-block w-100 " alt="...">
+        <div class="container">
+          <div class="carousel-caption container  div1 ">
+            <h4 class="c">Organic Fruits</h4>
+            <h1 class="d">Organic Fruits For Better Health</h1>
+            <button class="but1 ">Explore</button>
+            <button class="but2 ">Contact</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="container ">
+    <div class="row row-cols-1 row-cols-md-2  ">
+      <div class="col-12 col-lg-6  div4 ps-5 m-auto">
+        <h2>Organic Vegetables</h2>
+        <p>Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet lorem diam no duo sed dolore amet
+          diam</p>
+        <a class="icon-link icon-link-hover text-light" href="#">
+          Read More
+          <svg class="bi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+          </svg>
+        </a>
+      </div>
+      <div class="col-12 col-lg-6 div3 ps-5 m-auto">
+        <h2>Organic Fruits</h2>
+        <p>Dolor magna ipsum elitr sea erat elitr amet ipsum stet justo dolor, amet lorem diam no duo sed dolore amet
+          diam</p>
+        <a class="icon-link icon-link-hover text-dark" href="#">
+          Read More
+          <svg class="bi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class=" container mt-5">
+    <div class="row row-cols-1 row-cols-lg-2">
+      <div class="col-12 col-lg-6">
+        <img class="img1 p-5" src="thatha.png" alt="..">
+      </div>
+      <div class="">
+        <h5 class="text-success fs-3">About Us</h5>
+        <h1 class="fw-bold fs-1">We Produce Organic Food For Your Family</h1>
+        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et
+          sit,
+          sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna dolore erat amet magna</p>
+        <div class="d-block-lg">
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 512 512">
+                <path fill="url(#grad1)"
+                  d="M383.8 351.7c2.5-2.5 105.2-92.4 105.2-92.4l-17.5-7.5c-10-4.9-7.4-11.5-5-17.4 2.4-7.6 20.1-67.3 20.1-67.3s-47.7 10-57.7 12.5c-7.5 2.4-10-2.5-12.5-7.5s-15-32.4-15-32.4-52.6 59.9-55.1 62.3c-10 7.5-20.1 0-17.6-10 0-10 27.6-129.6 27.6-129.6s-30.1 17.4-40.1 22.4c-7.5 5-12.6 5-17.6-5C293.5 72.3 255.9 0 255.9 0s-37.5 72.3-42.5 79.8c-5 10-10 10-17.6 5-10-5-40.1-22.4-40.1-22.4S183.3 182 183.3 192c2.5 10-7.5 17.5-17.6 10-2.5-2.5-55.1-62.3-55.1-62.3S98.1 167 95.6 172s-5 9.9-12.5 7.5C73 177 25.4 167 25.4 167s17.6 59.7 20.1 67.3c2.4 6 5 12.5-5 17.4L23 259.3s102.6 89.9 105.2 92.4c5.1 5 10 7.5 5.1 22.5-5.1 15-10.1 35.1-10.1 35.1s95.2-20.1 105.3-22.6c8.7-.9 18.3 2.5 18.3 12.5S241 512 241 512h30s-5.8-102.7-5.8-112.8 9.5-13.4 18.4-12.5c10 2.5 105.2 22.6 105.2 22.6s-5-20.1-10-35.1 0-17.5 5-22.5z" />
+              </svg>
+              <h3>100% Organic</h3>
+              <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 384 512">
+                <path fill="url(#grad1)"
+                  d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
+              </svg>
+              <h3>100% Organic</h3>
+              <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class=" container-fluid mt-5 con1 bg-success">
+    <ul class=" row  row-cols-md-2 row-cols-lg-4">
+      <li class="col-12 col-sm-6 col-md-3 col-lg-3 col-xl-3 col-xxl-3 list-group-item d-flex mt-3 justify-content-center
+        text-light">
+        <div class=" " style="height: 50px; width: 50px; background-color:orange; border-radius: 30px;"><svg
+            class="ps-2 pt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 576 512"><path
+            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2
+            7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9
+            33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2
+            150.3 316.9 18z" />
+          </svg></div>
+        <div class="ms-4">
+          <h5>Our Experience</h5>
+          <h1>12345</h1>
+        </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3 list-group-item d-flex mt-3 justify-content-center text-light">
+        <div class=" " style="height: 50px; width: 50px; background-color:orange; border-radius: 30px;"><svg
+            class="ps-2 pt-2" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 640 512"><path
+            d="M144 0a80 80 0 1 1 0 160A80 80 0 1 1 144 0zM512 0a80 80 0 1 1 0 160A80 80 0 1 1 512 0zM0 298.7C0 239.8
+            47.8 192 106.7 192l42.7 0c15.9 0 31 3.5 44.6 9.7c-1.3 7.2-1.9 14.7-1.9 22.3c0 38.2 16.8 72.5 43.3 96c-.2
+            0-.4 0-.7 0L21.3 320C9.6 320 0 310.4 0 298.7zM405.3 320c-.2 0-.4 0-.7 0c26.6-23.5 43.3-57.8
+            43.3-96c0-7.6-.7-15-1.9-22.3c13.6-6.3 28.7-9.7 44.6-9.7l42.7 0C592.2 192 640 239.8 640 298.7c0 11.8-9.6
+            21.3-21.3 21.3l-213.3 0zM224 224a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zM128 485.3C128 411.7 187.7 352 261.3
+            352l117.3 0C452.3 352 512 411.7 512 485.3c0 14.7-11.9 26.7-26.7 26.7l-330.7 0c-14.7 0-26.7-11.9-26.7-26.7z"
+            />
+          </svg></div>
+        <div class="ms-4">
+          <h5>Our Experience</h5>
+          <h1>12345</h1>
+        </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3 list-group-item d-flex  justify-content-center mt-3 text-light ">
+        <div class=" " style="height: 50px; width: 50px; background-color:orange; border-radius: 30px;"><svg
+            class="ps-2 pt-2" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="white"
+              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+          </svg></div>
+        <div class="ms-4">
+          <h5>Our Experience</h5>
+          <h1>12345</h1>
+        </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3 list-group-item d-flex justify-content-center mt-3 text-light ">
+        <div class=" " style="height: 50px; width: 50px; background-color:orange; border-radius: 30px;"><svg
+            class="ps-3 pt-2" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="white"
+              d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32L0 416c0 53 43 96 96 96l192 0c53 0 96-43 96-96l16 0c61.9 0 112-50.1 112-112s-50.1-112-112-112l-48 0L32 192zm352 64l16 0c26.5 0 48 21.5 48 48s-21.5 48-48 48l-16 0 0-96zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z" />
+          </svg></div>
+        <div class="ms-4">
+          <h5>Our Experience</h5>
+          <h1>12345</h1>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-md-2 row-cols-lg-3 gx-4 gy-5 mt-3">
+      <div class="col-12 col-md-6 col-lg-4 ">
+        <h4 class="h4">Services</h4>
+        <h1 class="head5">Organic Farm Services</h1>
+        <p>Tempor erat elitr at rebum at at clita. Diam dolor diam ipsum et tempor sit. Clita erat ipsum et lorem et sit
+          sed stet labore</p>
+        <button class="but3">Contact Us</button>
+      </div>
+      <div class=" contain1 pt-5 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(20, 163, 20);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(236, 127, 38);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad1)"
+            d="M346.7 6C337.6 17 320 42.3 320 72c0 40 15.3 55.3 40 80s40 40 80 40c29.7 0 55-17.6 66-26.7c4-3.3 6-8.2 6-13.3s-2-10-6-13.2c-11.4-9.1-38.3-26.8-74-26.8c-32 0-40 8-40 8s8-8 8-40c0-35.7-17.7-62.6-26.8-74C370 2 365.1 0 360 0s-10 2-13.3 6zM244.6 136c-40 0-77.1 18.1-101.7 48.2l60.5 60.5c6.2 6.2 6.2 16.4 0 22.6s-16.4 6.2-22.6 0l-55.3-55.3 0 .1L2.2 477.9C-2 487-.1 497.8 7 505s17.9 9 27.1 4.8l134.7-62.4-52.1-52.1c-6.2-6.2-6.2-16.4 0-22.6s16.4-6.2 22.6 0L199.7 433l100.2-46.4c46.4-21.5 76.2-68 76.2-119.2C376 194.8 317.2 136 244.6 136z" />
+        </svg>
+        <h5>Fresh Vegetables</h5>
+        <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 contain1 pt-5  ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 448 512">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(20, 163, 20);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(236, 127, 38);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad1)"
+            d="M224 112c-8.8 0-16-7.2-16-16l0-16c0-44.2 35.8-80 80-80l16 0c8.8 0 16 7.2 16 16l0 16c0 44.2-35.8 80-80 80l-16 0zM0 288c0-76.3 35.7-160 112-160c27.3 0 59.7 10.3 82.7 19.3c18.8 7.3 39.9 7.3 58.7 0c22.9-8.9 55.4-19.3 82.7-19.3c76.3 0 112 83.7 112 160c0 128-80 224-160 224c-16.5 0-38.1-6.6-51.5-11.3c-8.1-2.8-16.9-2.8-25 0c-13.4 4.7-35 11.3-51.5 11.3C80 512 0 416 0 288z" />
+        </svg>
+        <h5>Fresh Fruits</h5>
+        <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+      </div>
+      <div class="contain1 mt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 576 512">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(20, 163, 20);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(236, 127, 38);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad1)"
+            d="M309.6 158.5L332.7 19.8C334.6 8.4 344.5 0 356.1 0c7.5 0 14.5 3.5 19 9.5L392 32l52.1 0c12.7 0 24.9 5.1 33.9 14.1L496 64l56 0c13.3 0 24 10.7 24 24l0 24c0 44.2-35.8 80-80 80l-32 0-16 0-21.3 0-5.1 30.5-112-64zM416 256.1L416 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-115.2c-24 12.3-51.2 19.2-80 19.2s-56-6.9-80-19.2L160 480c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-230.2c-28.8-10.9-51.4-35.3-59.2-66.5L1 167.8c-4.3-17.1 6.1-34.5 23.3-38.8s34.5 6.1 38.8 23.3l3.9 15.5C70.5 182 83.3 192 98 192l30 0 16 0 159.8 0L416 256.1zM464 80a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z" />
+        </svg>
+        <h5>Healty Cattle</h5>
+        <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 contain1 mt-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 640 512">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(20, 163, 20);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(236, 127, 38);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad1)"
+            d="M288 64l0 64 128 0L368 64l-80 0zM419.2 25.6L496 128l80 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32c-29.2-38.9-75.7-64-128-64s-98.8 25.1-128 64l-64 0c-29.2-38.9-75.7-64-128-64s-98.8 25.1-128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l160 0 0-80c0-26.5 21.5-48 48-48l96 0c20.1 0 39.1 9.5 51.2 25.6zM152 256l16 0c12.1 0 22.1 8.9 23.8 20.6c7.6 2.2 14.9 5.3 21.7 9c9.4-7 22.8-6.3 31.3 2.3l11.3 11.3c8.6 8.6 9.3 21.9 2.3 31.3c3.7 6.8 6.8 14.1 9 21.7c11.6 1.7 20.6 11.7 20.6 23.8l0 16c0 12.1-8.9 22.1-20.6 23.8c-2.2 7.6-5.3 14.9-9 21.7c7 9.4 6.3 22.8-2.3 31.3l-11.3 11.3c-8.6 8.6-21.9 9.3-31.3 2.2c-6.8 3.7-14.1 6.8-21.7 9C190.1 503.1 180.1 512 168 512l-16 0c-12.1 0-22.1-8.9-23.8-20.6c-7.6-2.2-14.9-5.3-21.7-9c-9.4 7.1-22.8 6.3-31.3-2.2L63.8 468.9c-8.6-8.6-9.3-21.9-2.3-31.3c-3.7-6.9-6.8-14.1-9-21.8C40.9 414.1 32 404.1 32 392l0-16c0-12.1 8.9-22.1 20.6-23.8c2.2-7.6 5.3-14.9 9-21.8c-7-9.4-6.3-22.8 2.3-31.3l11.3-11.3c8.6-8.6 21.9-9.3 31.3-2.3c6.8-3.7 14.1-6.8 21.7-9c1.7-11.6 11.7-20.6 23.8-20.6zm8 176a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM448.2 276.6c1.7-11.6 11.7-20.6 23.8-20.6l16 0c12.1 0 22.1 8.9 23.8 20.6c7.6 2.2 14.9 5.3 21.8 9c9.4-7 22.8-6.3 31.3 2.3l11.3 11.3c8.6 8.6 9.3 21.9 2.2 31.3c3.7 6.8 6.8 14.1 9 21.7c11.6 1.7 20.6 11.7 20.6 23.8l0 16c0 12.1-8.9 22.1-20.6 23.8c-2.2 7.6-5.3 14.9-9 21.7c7 9.4 6.3 22.8-2.2 31.3l-11.3 11.3c-8.6 8.6-21.9 9.3-31.3 2.2c-6.9 3.7-14.1 6.8-21.8 9C510.1 503.1 500.1 512 488 512l-16 0c-12.1 0-22.1-8.9-23.8-20.6c-7.6-2.2-14.9-5.3-21.7-9c-9.4 7.1-22.8 6.3-31.3-2.2l-11.3-11.3c-8.6-8.6-9.3-21.9-2.2-31.3c-3.7-6.9-6.8-14.1-9-21.8C360.9 414.1 352 404.1 352 392l0-16c0-12.1 8.9-22.1 20.6-23.8c2.2-7.6 5.3-14.9 9-21.8c-7-9.4-6.3-22.8 2.2-31.3l11.3-11.3c8.6-8.6 21.9-9.3 31.3-2.3c6.8-3.7 14.1-6.8 21.7-9zM528 384a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" />
+        </svg>
+        <h5>Modern Truck
+        </h5>
+        <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+      </div>
+      <div class="contain1 mt-5">
+        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 512 512">
+          <defs>
+            <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" style="stop-color:rgb(20, 163, 20);stop-opacity:1" />
+              <stop offset="100%" style="stop-color:rgb(236, 127, 38);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <path fill="url(#grad1)"
+            d="M256 0c5.3 0 10.3 2.7 13.3 7.1c15.8 23.5 36.7 63.7 49.2 109c7.2 26.4 11.8 55.2 10.4 84c11.5-8.8 23.7-16.7 35.8-23.6c41-23.3 84.4-36.9 112.2-42.5c5.2-1 10.7 .6 14.4 4.4s5.4 9.2 4.4 14.5c-5.6 27.7-19.3 70.9-42.7 111.7c-9.1 15.9-19.9 31.7-32.4 46.3c27.8 6.6 52.4 17.3 67.2 25.5c5.1 2.8 8.2 8.2 8.2 14s-3.2 11.2-8.2 14c-15.2 8.4-40.9 19.5-69.8 26.1c-20.2 4.6-42.9 7.2-65.2 4.6l8.3 33.1c1.5 6.1-.6 12.4-5.5 16.4s-11.6 4.6-17.2 1.9L280 417.2l0 70.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-70.8-58.5 29.1c-5.6 2.8-12.3 2.1-17.2-1.9s-7-10.3-5.5-16.4l8.3-33.1c-22.2 2.6-45 0-65.2-4.6c-28.9-6.6-54.6-17.6-69.8-26.1c-5.1-2.8-8.2-8.2-8.2-14s3.2-11.2 8.2-14c14.8-8.2 39.4-18.8 67.2-25.5C78.9 296.3 68.1 280.5 59 264.6c-23.4-40.8-37.1-84-42.7-111.7c-1.1-5.2 .6-10.7 4.4-14.5s9.2-5.4 14.4-4.4c27.9 5.5 71.2 19.2 112.2 42.5c12.1 6.9 24.3 14.7 35.8 23.6c-1.4-28.7 3.1-57.6 10.4-84c12.5-45.3 33.4-85.5 49.2-109c3-4.4 8-7.1 13.3-7.1z" />
+        </svg>
+        <h5>Farming Plans</h5>
+        <p>Labore justo vero ipsum sit clita erat lorem magna clita nonumy dolor magna dolor vero</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-5  contain2">
+    <h5 class="he5">Features</h5>
+    <h1 class="he5">Why Choose Us!!!</h1>
+    <div class="row row-cols-lg-3 gx-5 gy-5 text-light">
+      <div class="col-12 col-lg-4">
+        <div>
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg"
+            style="height: 50px; width: 50px; background-color:orange; border-radius: 50px; padding:10px;"
+            viewBox="0 0 512 512">
+            <path fill="white"
+              d="M256 0c5.3 0 10.3 2.7 13.3 7.1c15.8 23.5 36.7 63.7 49.2 109c7.2 26.4 11.8 55.2 10.4 84c11.5-8.8 23.7-16.7 35.8-23.6c41-23.3 84.4-36.9 112.2-42.5c5.2-1 10.7 .6 14.4 4.4s5.4 9.2 4.4 14.5c-5.6 27.7-19.3 70.9-42.7 111.7c-9.1 15.9-19.9 31.7-32.4 46.3c27.8 6.6 52.4 17.3 67.2 25.5c5.1 2.8 8.2 8.2 8.2 14s-3.2 11.2-8.2 14c-15.2 8.4-40.9 19.5-69.8 26.1c-20.2 4.6-42.9 7.2-65.2 4.6l8.3 33.1c1.5 6.1-.6 12.4-5.5 16.4s-11.6 4.6-17.2 1.9L280 417.2l0 70.8c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-70.8-58.5 29.1c-5.6 2.8-12.3 2.1-17.2-1.9s-7-10.3-5.5-16.4l8.3-33.1c-22.2 2.6-45 0-65.2-4.6c-28.9-6.6-54.6-17.6-69.8-26.1c-5.1-2.8-8.2-8.2-8.2-14s3.2-11.2 8.2-14c14.8-8.2 39.4-18.8 67.2-25.5C78.9 296.3 68.1 280.5 59 264.6c-23.4-40.8-37.1-84-42.7-111.7c-1.1-5.2 .6-10.7 4.4-14.5s9.2-5.4 14.4-4.4c27.9 5.5 71.2 19.2 112.2 42.5c12.1 6.9 24.3 14.7 35.8 23.6c-1.4-28.7 3.1-57.6 10.4-84c12.5-45.3 33.4-85.5 49.2-109c3-4.4 8-7.1 13.3-7.1z" />
+          </svg>
+          <h5>100% Organic</h5>
+          <p>Labore justo vero ipsum sit clita erat lorem magna clita</p>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            style="height: 50px; width: 50px; background-color:orange; border-radius: 50px; padding:10px;"
+            viewBox="0 0 384 512">
+            <path fill="white"
+              d="M173.8 5.5c11-7.3 25.4-7.3 36.4 0L228 17.2c6 3.9 13 5.8 20.1 5.4l21.3-1.3c13.2-.8 25.6 6.4 31.5 18.2l9.6 19.1c3.2 6.4 8.4 11.5 14.7 14.7L344.5 83c11.8 5.9 19 18.3 18.2 31.5l-1.3 21.3c-.4 7.1 1.5 14.2 5.4 20.1l11.8 17.8c7.3 11 7.3 25.4 0 36.4L366.8 228c-3.9 6-5.8 13-5.4 20.1l1.3 21.3c.8 13.2-6.4 25.6-18.2 31.5l-19.1 9.6c-6.4 3.2-11.5 8.4-14.7 14.7L301 344.5c-5.9 11.8-18.3 19-31.5 18.2l-21.3-1.3c-7.1-.4-14.2 1.5-20.1 5.4l-17.8 11.8c-11 7.3-25.4 7.3-36.4 0L156 366.8c-6-3.9-13-5.8-20.1-5.4l-21.3 1.3c-13.2 .8-25.6-6.4-31.5-18.2l-9.6-19.1c-3.2-6.4-8.4-11.5-14.7-14.7L39.5 301c-11.8-5.9-19-18.3-18.2-31.5l1.3-21.3c.4-7.1-1.5-14.2-5.4-20.1L5.5 210.2c-7.3-11-7.3-25.4 0-36.4L17.2 156c3.9-6 5.8-13 5.4-20.1l-1.3-21.3c-.8-13.2 6.4-25.6 18.2-31.5l19.1-9.6C65 70.2 70.2 65 73.4 58.6L83 39.5c5.9-11.8 18.3-19 31.5-18.2l21.3 1.3c7.1 .4 14.2-1.5 20.1-5.4L173.8 5.5zM272 192a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM1.3 441.8L44.4 339.3c.2 .1 .3 .2 .4 .4l9.6 19.1c11.7 23.2 36 37.3 62 35.8l21.3-1.3c.2 0 .5 0 .7 .2l17.8 11.8c5.1 3.3 10.5 5.9 16.1 7.7l-37.6 89.3c-2.3 5.5-7.4 9.2-13.3 9.7s-11.6-2.2-14.8-7.2L74.4 455.5l-56.1 8.3c-5.7 .8-11.4-1.5-15-6s-4.3-10.7-2.1-16zm248 60.4L211.7 413c5.6-1.8 11-4.3 16.1-7.7l17.8-11.8c.2-.1 .4-.2 .7-.2l21.3 1.3c26 1.5 50.3-12.6 62-35.8l9.6-19.1c.1-.2 .2-.3 .4-.4l43.2 102.5c2.2 5.3 1.4 11.4-2.1 16s-9.3 6.9-15 6l-56.1-8.3-32.2 49.2c-3.2 5-8.9 7.7-14.8 7.2s-11-4.3-13.3-9.7z" />
+          </svg>
+          <h5>100% Organic</h5>
+          <p>Labore justo vero ipsum sit clita erat lorem magna clita</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 bg-light p-5 text-dark">
+        <p>At et justo elitr amet sea at. Magna et sit vero at ipsum sit et dolores rebum. Magna sea eos sit dolor,
+          ipsum amet no tempor ipsum eirmod lorem eirmod diam tempor dolor eos diam et et diam dolor ea. Clita est
+          rebum amet dolore sit. Dolor stet dolor duo clita, vero dolor ipsum amet dolore magna lorem erat stet sed
+          vero dolor</p>
+        <img src="veg.png" alt=".." width="300" height="200">
+      </div>
+      <div class="col-12 col-lg-4">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            style="height: 50px; width: 50px; background-color:orange; border-radius: 50px; padding:10px;"
+            viewBox="0 0 640 512">
+            <path fill="white"
+              d="M288 64l0 64 128 0L368 64l-80 0zM419.2 25.6L496 128l80 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32c-29.2-38.9-75.7-64-128-64s-98.8 25.1-128 64l-64 0c-29.2-38.9-75.7-64-128-64s-98.8 25.1-128 64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l160 0 0-80c0-26.5 21.5-48 48-48l96 0c20.1 0 39.1 9.5 51.2 25.6zM152 256l16 0c12.1 0 22.1 8.9 23.8 20.6c7.6 2.2 14.9 5.3 21.7 9c9.4-7 22.8-6.3 31.3 2.3l11.3 11.3c8.6 8.6 9.3 21.9 2.3 31.3c3.7 6.8 6.8 14.1 9 21.7c11.6 1.7 20.6 11.7 20.6 23.8l0 16c0 12.1-8.9 22.1-20.6 23.8c-2.2 7.6-5.3 14.9-9 21.7c7 9.4 6.3 22.8-2.3 31.3l-11.3 11.3c-8.6 8.6-21.9 9.3-31.3 2.2c-6.8 3.7-14.1 6.8-21.7 9C190.1 503.1 180.1 512 168 512l-16 0c-12.1 0-22.1-8.9-23.8-20.6c-7.6-2.2-14.9-5.3-21.7-9c-9.4 7.1-22.8 6.3-31.3-2.2L63.8 468.9c-8.6-8.6-9.3-21.9-2.3-31.3c-3.7-6.9-6.8-14.1-9-21.8C40.9 414.1 32 404.1 32 392l0-16c0-12.1 8.9-22.1 20.6-23.8c2.2-7.6 5.3-14.9 9-21.8c-7-9.4-6.3-22.8 2.3-31.3l11.3-11.3c8.6-8.6 21.9-9.3 31.3-2.3c6.8-3.7 14.1-6.8 21.7-9c1.7-11.6 11.7-20.6 23.8-20.6zm8 176a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM448.2 276.6c1.7-11.6 11.7-20.6 23.8-20.6l16 0c12.1 0 22.1 8.9 23.8 20.6c7.6 2.2 14.9 5.3 21.8 9c9.4-7 22.8-6.3 31.3 2.3l11.3 11.3c8.6 8.6 9.3 21.9 2.2 31.3c3.7 6.8 6.8 14.1 9 21.7c11.6 1.7 20.6 11.7 20.6 23.8l0 16c0 12.1-8.9 22.1-20.6 23.8c-2.2 7.6-5.3 14.9-9 21.7c7 9.4 6.3 22.8-2.2 31.3l-11.3 11.3c-8.6 8.6-21.9 9.3-31.3 2.2c-6.9 3.7-14.1 6.8-21.8 9C510.1 503.1 500.1 512 488 512l-16 0c-12.1 0-22.1-8.9-23.8-20.6c-7.6-2.2-14.9-5.3-21.7-9c-9.4 7.1-22.8 6.3-31.3-2.2l-11.3-11.3c-8.6-8.6-9.3-21.9-2.2-31.3c-3.7-6.9-6.8-14.1-9-21.8C360.9 414.1 352 404.1 352 392l0-16c0-12.1 8.9-22.1 20.6-23.8c2.2-7.6 5.3-14.9 9-21.8c-7-9.4-6.3-22.8 2.2-31.3l11.3-11.3c8.6-8.6 21.9-9.3 31.3-2.3c6.8-3.7 14.1-6.8 21.7-9zM528 384a48 48 0 1 0 -96 0 48 48 0 1 0 96 0z" />
+          </svg>
+          <h5>100% Organic</h5>
+          <p>Labore justo vero ipsum sit clita erat lorem magna clita</p>
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg"
+            style="height: 50px; width: 50px; background-color:orange; border-radius: 50px; padding:10px;"
+            viewBox="0 0 512 512">
+            <path fill="white"
+              d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+          </svg>
+          <h5>100% Organic</h5>
+          <p>Labore justo vero ipsum sit clita erat lorem magna clita</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h5>Products</h5>
+    <h1>Our Fresh & Organic Products</h1>
+    <div class="row row-cols-1 row-cols-lg-4 contain4 z-1">
+      <div class="col-12 col-lg-3 iv bg-light ms-4">
+        <img src="b-1.png" alt="..">
+        <h3>Organic Vegetables</h3>
+        <h3 class="text-success">$ 19.00</h3>
+      </div>
+      <div class="col-12 col-lg-3 iv bg-light ms-4">
+        <img src="b-2.png" alt="..">
+        <h3>Organic Vegetables</h3>
+        <h3 class="text-success">$ 19.00</h3>
+      </div>
+      <div class="col-12 col-lg-3 iv bg-light ms-4">
+        <img src="b-1.png" alt="..">
+        <h3>Organic Vegetables</h3>
+        <h3 class="text-success">$ 19.00</h3>
+      </div>
+      <div class="col-12 col-lg-3 iv bg-light ms-4">
+        <img src="b-2.png" alt="..">
+        <h3>Organic Vegetables</h3>
+        <h3 class="text-success">$ 19.00</h3>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="contain3">
+      <div class="float-start  me-auto one">
+        <img class=" " src="b-1.png" alt="..">
+      </div>
+      <div class=" ms-auto two">
+        <img class="float-end" width="250" src="b-2.png" alt=".."> 
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5">
+    <div class="ter1 d-none-sm d-block">
+      <img style="width: 100%; height: 700px;" class=" " src="testimonial.jpg" alt="..">
+    </div>
+    <div class="ter container">
+      <img src="testimonial-2.jpg" class="rounded-circle" style="width: 130px;" alt="">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi fugit minima ratione, inventore nemo eum
+        recusandae accusantium, odit quisquam consectetur officiis dolore aperiam expedita quae iste. Ea cum nobis
+        laborum!</p>
+      <hr style="width: 150px; margin: auto;">
+      <h2>Client Name</h2>
+    </div>
+  </div>
+
+  <div class="container cin">
+    <h5>The Team</h5>
+    <h1>We Are Professional Organic Farmers</h1>
+    <div class="row row-cols-lg-3 ">
+      <div class="col-12 col-lg-4 onu" style="height: 400px;">
+        <img src="../Bootstrap/one.jpg" width="300px" height="450px" alt="">
+        <div class="d-flex list-group ullam " style="width: 60px; height: 450px;">
+          <svg class=" list-group-item bg-none ms-2 mt-5"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item  ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 onu" style="height: 400px;">
+        <img src="six.jpg" width="300px" height="450px" alt="">
+        <div class="d-flex list-group ullam " style="width: 60px; height: 450px;">
+          <svg class=" list-group-item bg-none ms-2 mt-5"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item  ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-lg-4 onu" style="height: 400px; margin-top:10px;">
+        <img src="four.jpg" width="300px" height="450px" alt="">
+        <div class="d-flex list-group ullam " style="width: 60px; height: 450px;">
+          <svg class=" list-group-item bg-none ms-2 mt-5"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item  ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+          <svg class="list-group-item ms-2 mt-5" xmlns="http://www.w3.org/2000/svg"
+            style="background-color: white; padding: 10px; border-radius: 40px; width: 40px; height: 40px;"
+            viewBox="0 0 576 512">
+            <path fill="orange"
+              d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container blog">
+    <h5>Our Blog</h5>
+    <h1>Latest Articles From Our Blog Post</h1>
+    <div class="row row-cols-1 row-cols-lg-3">
+      <div class="col-12 col-lg-4 contain6 ">
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing autem quia obcaecati dolor tenetur enim quo in? Eius.
+        </h5>
+        <p>Jan, 01 ,2030</p>
+      </div>
+      <div class="col-12 col-lg-4 contain7 ">
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing autem quia obcaecati dolor tenetur enim quo in? Eius.
+        </h5>
+        <p>Jan, 01 ,2030</p>
+      </div>
+      <div class="col-12 col-lg-4 contain8 ">
+        <h5>Lorem ipsum, dolor sit amet consectetur adipisicing autem quia obcaecati dolor tenetur enim quo in? Eius.
+        </h5>
+        <p>Jan, 01 ,2030</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 foot">
+    <ul class="col-12 col-md-6 col-lg-3">
+      <li class="fw-bold li">Get In Touch</li>
+      <li>123 Street, New York, USA</li>
+      <li>info@example.com </li>
+      <li>+012 345 67890</li>
+    </ul>
+    <ul class="col-12 col-md-6 col-lg-3">
+      <li class="fw-bold li"> Quick Links</li>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Our Services</li>
+      <li>Meet the Team</li>
+      <li>Lastest Blog</li>
+      <li>Contact Us</li>
+    </ul>
+
+    <ul class="col-12 col-md-6 col-lg-3">
+      <li class="fw-bold li">Quick Links</li>
+      <li>Home</li>
+      <li>About Us</li>
+      <li>Our Services</li>
+      <li>Meet the Team</li>
+      <li>Lastest Blog</li>
+      <li>Contact Us</li>
+    </ul>
+    <div class="foot-2">
+      <h3>NewsLetter</h3>
+      <h5>Subscribe Our Newsletter
+      </h5>
+      <p>Amet justo diam dolor rebum lorem sit stet sea justo kasd </p>
+      <button class="btn-group">
+        <input type="email" name="" id="" placeholder="Your Email">
+        <button class="p-1 text-light" type="submit">Sign Up</button>
+      </button>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>

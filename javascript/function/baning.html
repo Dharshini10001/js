@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="Balance()">Show Balance</button>
+<p id="balanceDisplay"></p>
+
+<body>
+    <script>
+        var Name = "Dharshini";
+        var Accountant_Number = 53537015;
+        var initial_amount = 5000;
+
+        var debit_amount = 100;
+        var credit_amount = 500;
+        var balance;
+
+        if (credit_amount > 0) {
+            balance = initial_amount + credit_amount;
+        } else if (debit_amount > 0) {
+            balance = initial_amount - debit_amount;
+        } else {
+            balance = initial_amount;
+        }
+
+        function Balance() {
+            document.getElementById('balanceDisplay').innerText = "Balance: " + balance;
+        }
+    </script>
+
+    <script>
+        
+    </script>
+</body>
+
+</html>

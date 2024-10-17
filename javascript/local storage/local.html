@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your name:"><br><br>
+    <input type="password" class="password" placeholder="enter your password:"><br><br>
+    <button class="submit">send</button>
+    <h1></h1>
+    <script>
+        // const btn = document.querySelector('button')
+        // btn.onclick = () => {
+        //     const input = document.querySelector('input');
+        //     localStorage.setItem('Name', input.value)
+
+        //     document.querySelector('h1').innerHTML += localStorage.getItem('Name')
+        //     localStorage.removeItem('Name')
+        // }
+
+        const but = document.querySelector('.submit');
+        but.onclick = () => {
+            const input = document.querySelector('input');
+            const gname = localStorage.getItem('Name1')
+            const pass = document.querySelector('.password');
+            localStorage.setItem('password', pass.value);
+            if (input.value == gname) {
+                alert('same');
+                // widow.location.href = ''
+            } else {
+                localStorage.setItem('Name1', input.value);
+
+            }
+            // document.querySelector('h1').innerHTML += localStorage.getItem('Name1') +"<br>";
+            // document.querySelector('h1').innerHTML += localStorage.getItem('password');
+
+            // localStorage.removeItem('Name1');
+        }
+    </script>
+</body>
+
+</html>

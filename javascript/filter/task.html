@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <input id="searc" type="search" placeholder="Search">
+    <button onclick="Search()">send</button>
+    <div id="div">
+
+    </div>
+    <script>
+        const arr = [{
+            SNo: '01',
+            Categories: "Electronics",
+            Price: '500',
+            img: './box-1.jpg'
+
+        },
+        {
+            SNo: '02',
+            Name: 'Anitha',
+            Age: '22',
+            City: 'Theni',
+            PhoneNo: '3525678469',
+            Whatsapp: '3525678469',
+            Address: '21,old Street,Theni.',
+            Qualification: 'B.sc-Commerce',
+            Percentage: '92%',
+            College: 'ABG Colege '
+        },
+        {
+            SNo: '04',
+            Name: 'Akalya',
+            Age: '22',
+            City: 'Namakkal',
+            PhoneNo: '8985747447',
+            Whatsapp: '8985747447',
+            Address: '21,New bus Street,Theni.',
+            Qualification: 'B.Com',
+            Percentage: '93%',
+            College: 'PSG Colege '
+        },
+        {
+            SNo: '05',
+            Name: 'Deepa',
+            Age: '22',
+            City: 'Karur',
+            PhoneNo: '7474478985',
+            Whatsapp: '7474478985',
+            Address: '21,Old bus Street,Karur.',
+            Qualification: 'BBA',
+            Percentage: '95%',
+            College: 'ASS Colege '
+        },
+        {
+            SNo: '06',
+            Name: 'BalaMitra',
+            Age: '20',
+            City: 'Virudhunagar',
+            PhoneNo: '9864225785',
+            Whatsapp: '9864225785',
+            Address: '22,RailWay bus Street,Karur.',
+            Qualification: 'BA-English',
+            Percentage: '98%',
+            College: 'VPMM Colege '
+        },
+        {
+            SNo: '07',
+            Name: 'Deepasri',
+            Age: '22',
+            City: 'Chennai',
+            PhoneNo: '9857474478',
+            Whatsapp: '9857474478',
+            Address: '21,Near bus Street,Karur.',
+            Qualification: 'BBA',
+            Percentage: '69%',
+            College: 'ASP Colege '
+        },
+        {
+            SNo: '08',
+            Name: 'Deepikasri',
+            Age: '25',
+            City: 'Coimbatore',
+            PhoneNo: '8574794478',
+            Whatsapp: '8574794478',
+            Address: '21,New Street,Karur.',
+            Qualification: 'Bio-Tech',
+            Percentage: '89%',
+            College: 'DSP Colege '
+        },
+        {
+            SNo: '09',
+            Name: 'Savitha',
+            Age: '29',
+            City: 'Dhindukal',
+            PhoneNo: '7885747944',
+            Whatsapp: '7885747944',
+            Address: '20,New Street,Karur.',
+            Qualification: 'BCA',
+            Percentage: '80%',
+            College: 'DOP Colege '
+        },
+        {
+            SNo: '10',
+            Name: 'Gayathri',
+            Age: '29',
+            City: 'Dharmapuri',
+            PhoneNo: '857479908',
+            Whatsapp: '857479908',
+            Address: '21,old Raileay Station,Karur.',
+            Qualification: 'Bsc-Chemistry',
+            Percentage: '78%',
+            College: 'MCAS Colege '
+        }
+        ]
+        console.log(arr[2])
+
+
+
+        const arro = [
+            {
+                SNo: '01',
+                Categories: "Electronics",
+                Price: '500',
+                img: './eletronic.jpg'
+            },
+            {
+                SNo: '02',
+                Categories: "jewellery",
+                Price: '400',
+                img: './jewellery.jpg'
+            },
+            {
+                SNo: '03',
+                Categories: "dress",
+                Price: '230',
+                img: './dress.jpg'
+            },
+            {
+                SNo: '04',
+                Categories: "kitchen",
+                Price: '200',
+                img: './kitchen.jpg'
+            }
+        ]
+
+        // var card = arro.map((item) => {
+        //     return (
+        //         `<div>
+        //         <h1>${item.Categories}</h1>
+        //         <h5>${item.Price}</h5>
+        //         <img src='${item.img}'>
+        //     </ol>`
+
+        //     )
+        // })
+        // document.getElementById('div').innerHTML += card.join(' ')
+
+
+
+
+        var sear = document.getElementById('searc');
+        function Search() {
+            var filter = arro.map((x) => {
+
+                if (x.Categories === sear.value) {
+                    return (
+                        `<div>
+                            <h1>${x.Categories}</h1>
+                            <h5>${x.Price}</h5>
+                            <img src='${x.img}'>
+                        </div>`
+                    )
+                }
+                else if(sear.value === ''){
+                    return (
+                        `<div>
+                            <h1>${x.Categories}</h1>
+                            <h5>${x.Price}</h5>
+                            <img src='${x.img}'>
+                        </div>`
+                    )
+                }
+            })
+            document.getElementById('div').innerHTML += filter.join(' ')
+
+
+            // document.write(filter + "<br>")
+            // console.log(filter);
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

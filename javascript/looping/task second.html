@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter first Number:'));
+        document.write('First number:', a +'<br>');
+        var b = Number(prompt('enter second number:'));
+        document.write('Second number:', b +'<br>');
+        var c = Number(prompt('enter third number:'));
+        document.write('third number:', c +'<br>');
+        
+        if (a>b && a>c) {
+            if (b>c) {
+                document.write('second greatest number is', b);
+            } else {
+                document.write('second greatest number is:', c);
+
+            }
+        }
+        else if (b>c && b>a) {
+            if (c>a) {
+                document.write('second greatest number is', c);
+            } else {
+                document.write('second greatest number is:', a);
+
+            }
+        }
+        else{
+        if(a>b){
+            document.write('second greatest number is',a);
+        }else{
+            document.write('second greatest number is:',b);
+            
+        }
+    }
+
+
+    
+    </script>
+</body>
+
+</html>

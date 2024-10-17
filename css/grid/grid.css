@@ -1,0 +1,25 @@
+body{
+    background-color: gold;
+}
+.table{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr ; */
+    /* grid-template-columns: minmax(200px, 1fr) 1fr 1fr ; */
+    /* grid-template-columns: repeat(3, 1fr) ; */
+    /* grid-template-columns: repeat(3, minmax(200px,1fr)) ; */
+    /* grid-template-columns: repeat(auto-fit, minmax(200px,2fr)) ; */
+    grid-template-columns: repeat(auto-fill, minmax(400px,1fr)) ;
+    column-gap: 20px;
+}
+.para{
+    background-color: white;
+    padding: 20px;
+}
+/* .para1{ */
+    /* grid-row: 1; */
+    /* grid-column:  1 /  span 2; */
+/* } */
+/* .para2{
+    grid-row: 2 / span 2;
+    grid-column: 1;
+} */

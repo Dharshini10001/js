@@ -1,0 +1,258 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+#half{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 75px;
+    width: 100%;
+    background-color: white;
+    
+}
+#nav1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    padding-top: 30px;
+    /* background-color: aqua; */
+    /* padding-bottom: 10px; */
+}
+
+#nav1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 40px;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+#search{
+    height: 30px;
+    width: 180px;
+    border-radius: 10px;
+}
+#nav1 ol {
+    margin-left: 20px;
+}
+#nav1 ol li {
+    display: inline;
+    padding-left: 40px;
+}
+#nav2 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#nav2 ol{
+    background-color: black;
+    color:white;
+    height:35px;
+    /* width: 1500px; */
+    padding-top: 15px;
+    /* overflow-x: scroll; */
+
+}
+#nav2 ol li {
+    display: inline;
+    padding: 17px;
+    /* padding-left: 40px; */
+    /* padding:30px; */
+}
+#nav2 ol li:hover{
+    background-color: rgb(28, 126, 28);
+    /* padding: 8px; */
+}
+#nav3{
+    position: fixed;
+    top: 120px;
+    left: 0px;
+    height: 700px;
+    width:200px;
+    overflow-y: scroll;
+    background-color: grey;
+}
+#nav3 h1{
+    padding-top: 30px;
+    font-size: 20px;    
+}
+#nav3 ol li{
+    padding: 8px;
+    display: block;
+    
+}
+#nav3 ol li:hover{
+    background-color: rgb(187, 185, 185);
+    /* padding: 8px; */
+}
+#full{
+    padding-top: 150px;
+    padding-left:210px;
+
+}
+/* #content{
+    padding-left:210px;
+} */
+#content h1{
+    padding:20px
+}
+#content input{
+    background-color: green;
+    height:40px;
+    width: 90px;
+    color:white;
+    border-color: white;
+    border-radius: 8px;
+    margin-left:20px
+
+}
+#content p{
+    padding:20px;
+    background-color: rgb(230, 245, 245);
+    height: 50px;
+    width:800px;
+}
+#p{
+    margin-top:10px;
+}
+.next{
+    margin-top: 10px;
+    margin-right:400px ;
+}
+#content1 h1{
+    padding: 10px;
+}
+#content1 p{
+    padding: 10px;
+}
+h3{
+    padding: 10px;
+}
+#content2{
+    padding: 10px;
+}
+.content2 h1{
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+.content2 p{
+    padding-bottom: 10px;
+}
+.content2 input{
+    padding: 10px;
+    border: none;
+    background-color: rgb(199, 194, 194);
+}
+.content2 input:hover{
+    background-color: green;
+}
+#content3 {
+    padding: 10px;
+}
+#content3 h1{
+    padding-bottom: 30px;
+}
+#content3 p{
+    padding-bottom: 20px;
+}
+#head{
+    background-color: rgba(0, 0, 0, 0.795);
+    color: white;
+    padding:20px;
+}
+#sub{
+    padding-left: 20px;
+    background-color: white;
+    color: black;
+}
+#sub h4{
+    padding-bottom: 30px;
+}
+#content4{
+    padding:10px;
+}
+#content4 h1{
+    padding-top:20px;
+}
+#content4 p{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+#content4 button{
+    padding:15px;
+    background-color: rgb(95, 169, 212);
+    border: none;
+    border-radius: 5px;
+    color:white;
+}
+#content5{
+    padding: 10px;
+}
+#p1{
+    background-color: rgb(227, 238, 238);
+}
+#content5 p{
+    padding: 10px;
+    height: 80px;
+    width:800px;
+    margin-top:10px;
+}
+#column button{
+    column-count: 3;
+    height: 40px;
+    width:260px;
+    column-gap: 100px;
+    margin: 30px;
+    padding:30px;
+    /* padding-bottom: 10px; */
+    border: none;
+    background-color: rgba(231, 224, 224, 0.918);
+    text-align: center;
+}
+#column button:hover{
+    background-color: black;
+    color: white;
+}
+#content7{
+    height:350px;
+    background-color: rgba(0, 0, 0, 0.863);
+    border-radius: 20px;
+}
+#content7{
+    color: rgb(214, 184, 184);
+    padding-top: 60px;
+    padding-left: 40px;
+
+}
+#content7 h1{
+    margin-bottom: 50px;
+}
+#content7 h2{
+    margin-bottom: 50px;
+}
+#content7 input{
+    margin-top: 30px;
+    padding-bottom:20px;
+    padding-top:16px;
+    height:50px;
+    width: 200px;
+    text-align: center;
+    background-color: rgb(95, 185, 95);
+    border: none;
+    border-radius: 30px;
+    color:white;
+    font-size: 17px;
+}
+#content8 input{
+    background-color: green;
+    height:40px;
+    width: 90px;
+    color:white;
+    border-color: white;
+    border-radius: 8px;
+    margin-left:20px
+}

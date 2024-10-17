@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form action=""> -->
+        <h1>welcome to Login Page</h1>
+    <label for="name">Name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" name="fname" id="name"><br><br>
+    <label for="password">Password:</label>
+    <input type="password" name="fpass" id="password">
+    <div id="passwordHelpInline" class="form-text"></div>
+
+    <br>
+    <label for="email">Email Id:</label>&nbsp;&nbsp;
+    <input type="email" name="femail" id="email"><br><br>
+    <label for="tele">Phone No:</label>
+    <input type="tel" name="ftel" id="tele"><br><br>
+    <button onclick="handleclick()">
+        submit
+    </button>
+    <!-- </form> -->
+
+    <script>
+        const email = document.getElementById('email');
+        email.addEventListener('change', emailchange)
+        function emailchange() {
+            const emailvalue = email.value;
+            const emailpattern = /^([A-Z0-9_+-]+\.?)*[A-Z0-9_+-]@([A-Z0-9][A-Z0-9-]*\.)+[A-Z]{2,}$/i;
+            if (emailpattern.test(emailvalue)) {
+                // document.getElementById('email').innerHTML = "valid";
+                console.log("true");
+
+            }
+            else {
+                console.log("false");
+            }
+        }
+
+        const password = document.getElementById('password');
+        password.addEventListener('change', passwordstore);
+        function passwordstore() {
+            const passwordvalue = password.value;
+            const passwordpattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*_)(?!.*\W)(?!.* ).{8,16}$/;
+            if (passwordpattern.test(passwordvalue)) {
+                document.getElementById('passwordHelpInline').innerHTML = "valid";
+                console.log("correct");
+            }
+            else {
+                document.getElementById('passwordHelpInline').innerHTML = "invalid";
+                console.log("false");
+            }
+        }
+        if (password ===true && email === true) {
+            const handleclick = () => {
+                window.location.href = 'home.html'
+            }
+
+        }
+        else {
+            document.write("Enter the value..")
+        }
+
+        fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/reply', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: '',
+                age: 18,
+                address: '24,old street,Salem',
+                phoneNo: 8877665544
+            })
+        })
+            .then((reply) => reply.json())
+            .then((datas) => console.log(datas))
+            .catch((error) => console.log(error))
+    </script>
+</body>
+
+</html>

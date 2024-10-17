@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, minus eum nesciunt maiores iusto
+            delectus ea tempore? Ipsa corporis odio eius maiores, exercitationem nisi odit temporibus porro consequuntur
+            deserunt delectus.
+        </p>
+    </div>
+    <script>
+        const newele = document.createElement('h1');
+        newele.setAttribute('id', 'Blue');
+        const newtext = document.createTextNode('Web Development');
+
+        newele.append(newtext)
+        console.log(newele)
+
+        const div = document.querySelector('#demo');
+        const p = document.querySelector('p');
+
+        div.insertBefore(newele, p);
+        newele.style.color = 'red';
+
+        // div.replaceChild(newele,p);
+        // div.removeChild(p);
+    </script>
+</body>
+
+</html>

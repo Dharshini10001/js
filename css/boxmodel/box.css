@@ -1,0 +1,33 @@
+div {
+    border-width: 30px 5px 7px 10px;
+    /* border-top-width: 5px;
+    border-style: solid dashed dotted groove;
+    border-top-style: dashed;
+    border-top-color: blue;
+    border-color: red blue skyblue orange;
+    border: 3px solid red;
+    border-radius: 20px;
+    padding: 20px 40px 50px 80px;
+    margin: 200px 400px 300px 500px;
+    margin: 100px auto auto auto ;
+    height: 200px;
+    width: 300px;
+    box-shadow: 0 0 30px 3px black inset; */
+}
+h1{
+    background-color: rgb(14, 13, 13);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+div{
+    padding:20px;
+    border: groove 3px black ;
+    margin:20px;
+    box-shadow: 0 0 50px 3px rgb(192, 127, 138) ;
+}
+h4{
+    font-size: 23px;
+}
+p{
+    font-size: 18px;
+}

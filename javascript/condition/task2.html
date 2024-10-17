@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Second Greatest Number</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter first Number:'));
+        document.write('First Number: ' + a + '<br>');
+        var b = Number(prompt('Enter Second Number:'));
+        document.write('Second Number: ' + b + '<br>');
+        var c = Number(prompt('Enter third Number:'));
+        document.write('Third Number: ' + c + '<br>');
+        var d = Number(prompt('Enter fourth Number:'));
+        document.write('Fourth Number: ' + d + '<br>');
+
+        var greatest, secondGreatest;
+
+        if (a > b && a > c && a > d) {
+            greatest = a;
+            if (b > c && b > d) {
+                secondGreatest = b;
+            } else if (c > b && c > d) {
+                secondGreatest = c;
+            } else {
+                secondGreatest = d;
+            }
+        } else if (b > a && b > c && b > d) {
+            greatest = b;
+            if (a > c && a > d) {
+                secondGreatest = a;
+            } else if (c > a && c > d) {
+                secondGreatest = c;
+            } else {
+                secondGreatest = d;
+            }
+        } else if (c > a && c > b && c > d) {
+            greatest = c;
+            if (a > b && a > d) {
+                secondGreatest = a;
+            } else if (b > a && b > d) {
+                secondGreatest = b;
+            } else {
+                secondGreatest = d;
+            }
+        } else {
+            greatest = d;
+            if (a > b && a > c) {
+                secondGreatest = a;
+            } else if (b > a && b > c) {
+                secondGreatest = b;
+            } else {
+                secondGreatest = c;
+            }
+        }
+
+        document.write('The second greatest number is:', secondGreatest);
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter first Number:'));
+        document.write('First Number:', a + '<br>');
+        var b = Number(prompt('Enter Second Number:'));
+        document.write('Second Number:', b + '<br>');
+        var c = Number(prompt('Enter third Number:'));
+        document.write('third Number:', c + '<br>');
+        var d = Number(prompt('Enter four Number:'));
+        document.write('Four Number:', d + '<br>');
+
+        if (a > b && a > c && a > d) {
+            console.log('a is greater:', a);
+            if (b > c && b > d) {
+                console.log('b is second greater', b);
+                if (c > d) {
+                    console.log('c is 3rd greatestnumber:', c);
+                } else {
+                    console.log('d is 4th greatest number :', d);
+                    console.log('c is 4rd greatest number:', d);
+                }
+            }
+        }
+
+        else if (b > c && b > d && b > a) {
+            console.log('a is greater:', b);
+            if (c > d && c > a) {
+                console.log('b is second greater', c);
+                if (d > a) {
+                    console.log('c is 3rd greatestnumber:', d);
+                } else {
+                    console.log('d is 4th greatest number :', a);
+                    console.log('c is 4rd greatest number:', a);
+                }
+            }
+        }
+
+        else if (c > d && c > a && c > b) {
+            console.log('a is greater:', c);
+            if (d > a && d > b) {
+                console.log('b is second greater', d);
+                if (a > b) {
+                    console.log('c is 3rd greatestnumber:', a);
+                } else {
+                    console.log('d is 4th greatest number :', b);
+                    console.log('c is 4rd greatest number:', a);
+                }
+            }
+        }
+
+        else {
+            console.log('a is greater:', d);
+            if (a > b && a > c) {
+                console.log('b is second greater', a);
+                if (b > c) {
+                    console.log('c is 3rd greatestnumber:', b);
+                } else {
+                    console.log('d is 4th greatest number :', c);
+                    console.log('c is 4rd greatest number:', b);
+                }
+            }
+        }       
+    </script>
+</body>
+
+</html>correct this code

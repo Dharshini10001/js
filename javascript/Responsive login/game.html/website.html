@@ -1,0 +1,491 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Base styles for cards */
+        .card {
+            margin-bottom: 1rem;
+            /* Space between cards when they stack */
+        }
+
+        /* For screens larger than 1200px */
+        @media (min-width: 1201px) {
+            .big-first-cards {
+                display: flex;
+            }
+            .card-1{
+                max-width: 66%;
+            }
+            .first-row {
+                height: 800px;
+            }
+
+            /* .card-1 .row {
+                display: flex;
+                flex-wrap: wrap;
+            }  */
+            .card-1-block {
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+            }
+
+        }
+
+        /* For screens between 768px and 1200px (Tablet view) */
+        @media (max-width: 1200px) {
+            .first-row {
+                max-width: 50%;
+                height: auto;
+            }
+
+            .card-1 .row {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+
+            .card-1-block {
+                display: flex;
+            }
+
+            .block-card {
+                width: 50%;
+                height: auto;
+            }
+
+        }
+
+        /* For screens less than 768px (Mobile view) */
+        @media (max-width: 767px) {
+            .first-row {
+                max-width: 100%;
+                height: auto;
+            }
+
+            .card-1 .row {
+                flex-direction: column;
+            }
+
+            .card-1 .col {
+                width: 100%;
+                /* Full width */
+            }
+
+            .card-1-block {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .block-card {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+     
+        flex-direction: row;
+
+     -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <div class="big-first-cards">
+
+        <div class="card-1">
+            <div class="row row-cols-1 row-cols-md-2  g-4"> -->
+<!-- First Column: Carousel Card -->
+<!-- <div class="col first-row">
+                    <div class="card">
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="box-3-2-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="box2-3-1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="box2-3-2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Nam ipsum dolorem aliquam ex explicabo inventore optio,
+                                neque
+                                voluptatibus cum adipisci id eius. Quaerat, aut. Voluptates et sit expedita quod magni.
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, corrupti! Lorem
+                                ipsum,
+                                dolor sit amet consectetur adipisicing elit. Dolore quis pariatur animi illo mollitia,
+                                necessitatibus fugiat aperiam facere? Eveniet, itaque ipsam. Modi quis reprehenderit
+                                provident dignissimos maxime cupiditate, ipsum magni! Lorem, ipsum dolor sit amet
+                                consectetur adipisicing elit. Delectus harum obcaecati ea quasi eligendi omnis placeat
+                                voluptates architecto excepturi accusantium tenetur neque voluptatibus inventore
+                                doloribus
+                                reprehenderit, distinctio optio nobis repellat!.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+                 Second Column: Image Card -->
+<!-- <div class="col picture-container first-row">
+                    <div class="">
+                        <img src="box-1-2.webp" class="card-img-top picture" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div> -->
+<!-- Third Column: Two Cards Stacked -->
+<!-- <div class=" card-1-block">
+            <div class="card mb-3 block-card">
+                <img src="box-1-3-3.avif" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card mb-3 mt-3 block-card">
+                <img src="box-1-3.avif" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <style>
+        /* Basic Navbar styling */
+        .navbar {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .dropdown-btn {
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Dropdown styling */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            /* Full screen width */
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            z-index: 1;
+            display: flex;
+            /* Flex layout to split into columns */
+            justify-content: space-around;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: flex;
+            /* Show on hover */
+        }
+
+        /* Column styling */
+        .column {
+            flex-basis: 24%;
+            /* Roughly one-fourth of the full width */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .column a {
+            padding: 8px 0;
+            text-decoration: none;
+            color: black;
+        }
+
+        .column a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navbar">
+            <li class="dropdown">
+                <a href="#" class="dropdown-btn">Dropdown</a>
+                <div class="dropdown-content">
+                    <div class="column">
+                        <a href="#">Item 1</a>
+                        <a href="#">Item 2</a>
+                        <a href="#">Item 3</a>
+                    </div>
+                    <div class="column">
+                        <a href="#">Item 4</a>
+                        <a href="#">Item 5</a>
+                        <a href="#">Item 6</a>
+                    </div>
+                    <div class="column">
+                        <a href="#">Item 7</a>
+                        <a href="#">Item 8</a>
+                        <a href="#">Item 9</a>
+                    </div>
+                    <div class="column">
+                        <a href="#">Item 10</a>
+                        <a href="#">Item 11</a>
+                        <a href="#">Item 12</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function toggleDropdown() {
+            var dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.style.display = dropdownContent.style.display === 'grid' ? 'none' : 'grid';
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .topic-hover :hover .hover-full {
+            display: flex;
+        }
+        .second-card-2{
+            margin-top: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="d-none d-xl-block navbar-expand-lg second-card-2 ">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="nav nav-underline me-auto  my-lg-0 ">
+                    <li class="nav-item topic-hover bg-dark">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white"
+                                class="bi bi-grid" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                            </svg>All Categories
+                        </a>
+                    </li>
+                    <div class="d-flex hover-full bg-dark">
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item  text-light bg-dark fw-bold" href="#">Collections</li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">Action Game</a></li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">Best Sellers</a></li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">Featured collection</a></li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">Genre</a></li>
+                            <li><a class="dropdown-item text-light bg-dark" href="#">New Arrivals</a></li>
+                        </ul>
+                        <ul class="dropdown-menu 4">
+                            <li><a class="dropdown-item fw-bold" href="#">Collections></li>
+                            <li><a class="dropdown-item" href="#">Action Game</a></li>
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#">Featured collection</a></li>
+                            <li><a class="dropdown-item" href="#">Genre</a></li>
+                            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        </ul>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item fw-bold" href="#">Collections></li>
+                            <li><a class="dropdown-item" href="#">Action Game</a></li>
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#">Featured collection</a></li>
+                            <li><a class="dropdown-item" href="#">Genre</a></li>
+                            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        </ul>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item fw-bold" href="#">Collections></li>
+                            <li><a class="dropdown-item" href="#">Action Game</a></li>
+                            <li><a class="dropdown-item" href="#">Adventure</a></li>
+                            <li><a class="dropdown-item" href="#">Best Sellers</a></li>
+                            <li><a class="dropdown-item" href="#">Featured collection</a></li>
+                            <li><a class="dropdown-item" href="#">Genre</a></li>
+                            <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                        </ul>
+                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                class="bi bi-controller" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.5 6.027a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2.5-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m-1.5 1.5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m-6.5-3h1v1h1v1h-1v1h-1v-1h-1v-1h1z" />
+                                <path
+                                    d="M3.051 3.26a.5.5 0 0 1 .354-.613l1.932-.518a.5.5 0 0 1 .62.39c.655-.079 1.35-.117 2.043-.117.72 0 1.443.041 2.12.126a.5.5 0 0 1 .622-.399l1.932.518a.5.5 0 0 1 .306.729q.211.136.373.297c.408.408.78 1.05 1.095 1.772.32.733.599 1.591.805 2.466s.34 1.78.364 2.606c.024.816-.059 1.602-.328 2.21a1.42 1.42 0 0 1-1.445.83c-.636-.067-1.115-.394-1.513-.773-.245-.232-.496-.526-.739-.808-.126-.148-.25-.292-.368-.423-.728-.804-1.597-1.527-3.224-1.527s-2.496.723-3.224 1.527c-.119.131-.242.275-.368.423-.243.282-.494.575-.739.808-.398.38-.877.706-1.513.773a1.42 1.42 0 0 1-1.445-.83c-.27-.608-.352-1.395-.329-2.21.024-.826.16-1.73.365-2.606.206-.875.486-1.733.805-2.466.315-.722.687-1.364 1.094-1.772a2.3 2.3 0 0 1 .433-.335l-.028-.079zm2.036.412c-.877.185-1.469.443-1.733.708-.276.276-.587.783-.885 1.465a14 14 0 0 0-.748 2.295 12.4 12.4 0 0 0-.339 2.406c-.022.755.062 1.368.243 1.776a.42.42 0 0 0 .426.24c.327-.034.61-.199.929-.502.212-.202.4-.423.615-.674.133-.156.276-.323.44-.504C4.861 9.969 5.978 9.027 8 9.027s3.139.942 3.965 1.855c.164.181.307.348.44.504.214.251.403.472.615.674.318.303.601.468.929.503a.42.42 0 0 0 .426-.241c.18-.408.265-1.02.243-1.776a12.4 12.4 0 0 0-.339-2.406 14 14 0 0 0-.748-2.295c-.298-.682-.61-1.19-.885-1.465-.264-.265-.856-.523-1.733-.708-.85-.179-1.877-.27-2.913-.27s-2.063.091-2.913.27" />
+                            </svg>retro-game
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item text-light bg-dark fw-bold" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16">
+                                <path fill="white"
+                                    d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z" />
+                            </svg>racing
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16">
+                                <path fill="white"
+                                    d="M96 64c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32l0 160 0 64 0 160c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-64-32 0c-17.7 0-32-14.3-32-32l0-64c-17.7 0-32-14.3-32-32s14.3-32 32-32l0-64c0-17.7 14.3-32 32-32l32 0 0-64zm448 0l0 64 32 0c17.7 0 32 14.3 32 32l0 64c17.7 0 32 14.3 32 32s-14.3 32-32 32l0 64c0 17.7-14.3 32-32 32l-32 0 0 64c0 17.7-14.3 32-32 32l-32 0c-17.7 0-32-14.3-32-32l0-160 0-64 0-160c0-17.7 14.3-32 32-32l32 0c17.7 0 32 14.3 32 32zM416 224l0 64-192 0 0-64 192 0z" />
+                            </svg> Chess-Piece
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                <path fill="white"
+                                    d="M232 152A72 72 0 1 0 88 152a72 72 0 1 0 144 0zm24 120l-12.6 0 10.7 80-48.4 0L195 272l-35 0-35 0-10.7 80-48.4 0 10.7-80L64 272c-13.3 0-24-10.7-24-24s10.7-24 24-24c-15.1-20.1-24-45-24-72C40 85.7 93.7 32 160 32s120 53.7 120 120c0 27-8.9 51.9-24 72c13.3 0 24 10.7 24 24s-10.7 24-24 24zM52.7 464l214.7 0-16.6-32L69.2 432 52.7 464zm207.9-80c12 0 22.9 6.7 28.4 17.3l26.5 51.2c3 5.8 4.6 12.2 4.6 18.7c0 22.5-18.2 40.8-40.8 40.8L40.8 512C18.2 512 0 493.8 0 471.2c0-6.5 1.6-12.9 4.6-18.7l26.5-51.2C36.5 390.7 47.5 384 59.5 384l201 0z" />
+                            </svg>dices
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="white"
+                                class="bi bi-grid" viewBox="0 0 16 16">
+                                <path
+                                    d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
+                            </svg> pages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+                </ul>
+                <div class="d-block right-navbar">
+                    <div class=" me-2 ">Send Email:</div>
+                    <div class="fw-bold">Contact@shop.com</div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

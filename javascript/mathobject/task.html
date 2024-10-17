@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div  style="height: 100px; width: 200px;">
+        <h1 id="h1"> Dharshini</h1>
+    </div>
+    <script>
+        const r= Math.floor(Math.random() * 255);
+        console.log(r);
+        const g = Math.floor(Math.random()*255);
+        console.log(g);
+        const b = Math.floor(Math.random()*255);
+        console.log(b);
+        rgb = `rgb(${r},${g},${b})`;
+        console.log(rgb);
+
+        document.getElementById('h1').style.color = rgb;
+    </script>  
+</body>
+</html>

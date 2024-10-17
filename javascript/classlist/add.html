@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        button{
+            border: none;
+            background-color: transparent;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <h1 class="red">Web development</h1>
+    <button>change</button>
+
+    <script>
+        const btn = document.querySelector('button');
+        btn.onclick=()=>{
+           const h1 = document.querySelector('h1');
+           const h1class =  h1.getAttribute('class');
+
+           if(h1class=='red'){
+            h1.classList.remove('red')
+            h1.classList.add('blue')
+           }
+           else{
+            h1.classList.remove('blue')
+            h1.classList.add('red')
+           }
+        }
+    </script>
+    
+</body>
+</html>

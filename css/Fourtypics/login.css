@@ -1,0 +1,88 @@
+#whole{
+    background: linear-gradient(90deg,rgb(6, 56, 56),skyblue,rgb(24, 156, 156),rgb(65, 156, 156),skyblue,rgb(6, 56, 56));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.img{
+    position: absolute;
+    top: 10%;
+    left: 42%;
+    /* margin-top: 40px; */
+}
+/* svg{
+    position: absolute;
+    top: 15%;
+    left: 43%;
+} */
+
+#container{
+    height: 380px;
+    width: 450px;
+    margin-left:450px;
+    margin-top: 150px;
+    background-color:rgba(11, 85, 85, 0.507) ;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgba(182, 212, 212, 0.507) ;
+}
+/* #container svg{
+    padding-bottom: 40px;
+} */
+ #sub{
+    padding: 40px;
+ }
+ #sub span{
+    display: inline;
+}
+#sub span  input{
+    border: none;
+    background-color:rgba(22, 119, 119, 0.507);
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    /* color: white; */
+}
+#sub span  input::placeholder{
+    color: white;
+    font-size: 17px;
+}
+#sub .h4{
+    font-size: 15px;
+}
+
+#sub span svg{
+    position: relative;
+    top: 20px;
+    right: 10px;
+    /* margin: 100px 10px 0px 10px; */
+}
+.sub  span {
+    display: inline;
+    
+}
+.sub a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.sub span:nth-child(2){
+    padding-left: 55px;
+    /* color: white; */
+    /* background-color: aqua; */
+}
+.sub span:nth-child(1){
+    color: white;
+    font-size: 18px;
+}
+.sub input{
+    background-color:rgba(2, 36, 36, 0.507) ;
+}
+#sub button{
+    margin-top:40px ;
+    width: 350px;
+    height: 50px;
+    background-color:rgba(2, 36, 36, 0.507) ;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}

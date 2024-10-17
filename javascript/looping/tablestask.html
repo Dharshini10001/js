@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = 16;
+        for (i = 0; i <= 16; i++) {
+            document.write(i, '*16=', i * a + '<br>');
+        }
+
+
+
+        // var item =prompt('ente r the alphabet:');
+        // document.write('the alphabet:',item);
+        // var arr = ['a','e','i','o','u','A','E','I','O','U'];
+        // if(item==arr){
+        //     document.write('this input is vowel')
+        // }
+        // else{
+        //     document.write('this input is not an vowel')
+        // }
+
+
+        var b = prompt('enter the item:');
+        // document.write('the item is:', b);
+        var arr = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+        for (let i = 0; i <b.length; i++) {
+            if (b[i] == arr[0] ||
+                b[i] == arr[1] ||
+                b[i] == arr[2] ||
+                b[i] == arr[3] ||
+                b[i] == arr[4] ||
+                b[i] == arr[5] ||
+                b[i] == arr[6] ||
+                b[i] == arr[7] ||
+                b[i] == arr[8] ||
+                b[i] == arr[9]) {
+                document.write('vowels:',b[i],'<br>');
+            }
+            else {
+                document.write('not an vowel:',b[i],'<br>')
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

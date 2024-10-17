@@ -1,0 +1,25 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+ol{
+    position: fixed;
+    top: 0;
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    background-color: purple;
+    height: 50px;
+    width: 100%;
+    padding-top: 20px;
+}
+ol li{
+    display: inline;
+    color: white;
+    padding: 30px;
+}
+ol li:hover{
+    background-color: rgba(255, 255, 255, 0.385);
+    
+}

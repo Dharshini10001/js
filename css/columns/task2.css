@@ -1,0 +1,124 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+#navigate{
+    position: fixed;
+    width: 100%;
+}
+#nav1{
+    top: 0;
+    margin:0%;
+    padding:0%;
+    height: 50px;
+    background-color: blue;
+    padding-bottom: 5px;
+}
+#nav1 li{
+    display: inline;
+    list-style-type:none; 
+    padding-left: 20px;
+    color:white;
+}
+#nav1 Svg{
+    padding-top: 5px;
+}
+#nav1 a{
+    text-decoration: none;
+    color:white;
+    display: inline;
+}
+#nav2{
+    top: 0;
+    margin:0%;
+    padding:0%;
+    height: 50px;
+    background-color: white;
+    height:80px;
+}
+#nav2 img{
+    height: 40px;
+    width: 40px;
+}
+#nav2 h1{
+    /* padding-top: 2px; */
+    color: darkviolet;
+    position:absolute;
+    padding-left: 10px;
+}
+#nav2 ol li{
+    list-style-type:none;
+    display: inline;
+    padding-left: 20px;
+}
+#nav2 a{
+    text-decoration: none;
+    color: blue;
+}
+.one{
+    padding-left: 150px;
+}
+.first{
+background-image: url('close-up-young-colleagues-having-meeting_23-2149060255.avif');
+text-align: center;
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-size: cover;
+height: 150px;
+color: white;
+padding-top:250px;
+}
+#Section{
+    margin:50px;
+    border-width: 40px;
+    border-radius: 10px;
+    padding:20px;
+    /* margin: 1000; */
+    box-shadow: 0 0 30px 3px rgb(163, 156, 156) ;
+    height:520px;
+    width:400px; 
+    text-align: left;  
+}
+#section iframe{
+    margin-left:20px;
+    /* margin-bottom: 20px; */
+}
+h4{
+    padding-bottom: 9px;
+    text-align: center;
+}
+p{
+    padding-left: 5px;
+    padding-top:2px;
+    font-size: 17px;
+}
+#div{
+    background-color: blue;
+    width:1350px;
+    color:white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    /* position: absolute; */
+}
+#div p{
+    text-align: center;
+    border-top: 4px solid white;
+    /* border-color: white; */
+    padding: 20px;
+    font-size: 17px;
+}
+th{
+    padding-bottom: 40px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+td{
+    padding-bottom: 10px;
+    font-size: 17px;
+    padding-left: 20px;
+}
+td p{
+    border-top: 1px;
+}
+
+

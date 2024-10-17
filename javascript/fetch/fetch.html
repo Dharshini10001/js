@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // console.log(
+
+        // );
+        // fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/login',{
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify({
+        //         name:'dharshini',
+        //         age:24
+        //     })
+        // })
+        // .then((res)=>res.json())
+        // .then((data)=>console.log(data))
+        // .catch((err)=>console.log(err))
+
+        // fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/name',{
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify({
+        //         name:'Anitha',
+        //         age:20
+        //     })
+        
+            
+        // })
+        
+        // .then((rea)=>rea.json())
+        // .then((data)=>console.log(data[32]))
+        // .catch((err)=>console.log(err))
+
+        // fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/user',{
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify({
+        //         name:'Akalya',
+        //         age:21,
+        //         address:'new bus stand,Namakkal.',
+        //         phoneNo:7766554434
+        //     })
+            
+        // })
+        
+        // .then((rea)=>rea.json())
+        // .then((data)=>console.log(data))
+        // .catch((err)=>console.log(err))
+        
+
+        
+        // fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/comments',{
+        //     method:'POST',
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     },
+        //     body:JSON.stringify({
+        //         name:'deepikasri',
+        //         age:19,
+        //         address:'old bus stand,selam.',
+        //         phoneNo:9988776655
+        //     })
+            
+        // })
+        // .then((rea)=>rea.json())
+        // .then((data)=>console.log(data))
+        // .catch((err)=>console.log(err))
+
+
+        fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/reply',{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                name:'AshaKumari',
+                age:18,
+                address:'24,old street,Salem',
+                phoneNo:8877665544
+            })
+        })
+        .then((reply)=> reply.json())
+        .then((datas)=>console.log(datas))
+        .catch((error)=>console.log(error))
+    </script>
+    
+</body>
+</html>

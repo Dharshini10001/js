@@ -1,0 +1,21 @@
+img{
+    width:120px;
+    height: 90px;
+    
+}
+h4{
+    text-align: center;
+    color: blue;
+}
+p{
+    text-align: center;
+}
+section{
+    columns:300px;
+    /* column-count: 3; */
+    column-gap: 100px;
+    }
+    p{
+        column-count: 1;
+        text-align: center;
+    }

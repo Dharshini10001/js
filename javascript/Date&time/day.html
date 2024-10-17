@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-image: url('/javascript/Date&time/desktop-wallpaper-pin-on-in-2020-colored-collage.jpg');
+        color: white;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  .container {
+        height: 600px;
+        width: 500px;
+        position: relative;
+        top: 300px;
+       
+    }
+
+    #minutes,
+    #hours {
+        font-size: 100px;
+    }
+
+    #days,
+    #month,
+    #dates {
+        font-size: 50px;
+    }
+    /* .container:hover{
+        display: none;
+    } */
+
+    /* .dropdown */
+</style>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <div class="container dropdown-toggle" data-bs-toggle="dropdown" data-bs-target="#lock">
+            <span id="hours">00</span>
+            <span style="font-size:100px;">:</span>
+            <span id="minutes">00</span>
+            <span id="ampm"></span><br>
+            <span id="days"></span>&nbsp;&nbsp;
+            <span id="dates"></span>&nbsp;&nbsp;
+            <span id="month"></span>
+        </div>
+    </div>
+    <script>
+        var today = new Date();
+        let hr = today.getHours();
+        let mins = today.getMinutes();
+        var date = today.getDate();
+        // console.log(date)
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satursday"];
+        var month = today.getMonth();
+        var monthlist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        let hrs = document.getElementById('hours');
+        let min = document.getElementById('minutes');
+        let ampm = document.getElementById('ampm')
+        let days = document.getElementById('days');
+        let mon = document.getElementById('month');
+        let dat = document.getElementById('dates');
+
+
+        hrs.innerHTML = zero(hr);
+        min.innerHTML = zero(mins);
+        days.innerHTML = daylist[day];
+        mon.innerHTML = monthlist[month];
+        dat.innerHTML = date;
+        if (hr > 12) {
+            ampm.innerHTML = 'pm'
+        }
+        if (hr >= 12) {
+            hr = hr - 12;
+            hrs.innerHTML = zero(hr)
+        }
+        function zero(num) {
+            return num < 10 ? `0${num}` : num
+        }
+        setInterval(Display, 1000); // 1000ms = 1 sec
+    </script>
+</body>
+
+</html>

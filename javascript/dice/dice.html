@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dice</title>
+    <style>
+        #dice {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 120px);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .dicepart {
+            background-color: black;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dice"></div>
+    <input type="number" id="input" min="0">
+    <button id="button">Send</button>
+    <script>
+        const button = document.getElementById("button");
+        const input = document.getElementById("input");
+        const diceContainer = document.getElementById("dice");
+
+        button.onclick = () => {
+            const numberOfDice = parseInt(input.value, 10);
+
+            // Clear existing dice elements
+            diceContainer.innerHTML = '';
+
+            // Create new dice elements
+            for (let i = 0; i < numberOfDice; i++) {
+                const dicePart = document.createElement("div");
+                dicePart.className = "dicepart";
+                
+                // Alternate background color
+                dicePart.style.backgroundColor = (i % 2 === 0) ? "black" : "white";
+                
+                diceContainer.appendChild(dicePart);
+            }
+        };
+    </script>
+</body>
+
+</html> -->

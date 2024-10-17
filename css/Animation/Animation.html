@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: blue;
+            height: 50px;
+            width: 100px;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            /* animation: name duration timing-function delay iteration-count direction; */
+        }
+
+        @keyframes move {
+            0%{
+                top: 0px;
+                left: 0px;
+                background-color: blue;
+            }
+            25%{
+                left: 25%;
+                top: 0px;
+                background-color: red;
+            } 
+            50%{
+                left: 50%px;
+                top: 0px;
+                background-color: pink;
+            } 
+            75%{
+                left: 75%;
+                top: 0px;
+                background-color: yellow;
+            }
+            100%{
+                left: 100%;
+                top: 0px;
+                background-color: teal;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <div></div>
+    
+</body>
+</html>

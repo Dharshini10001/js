@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the Greatest Number</title>
+</head>
+
+<body>
+    <script>
+        var a = Number(prompt('Enter the first number:'));
+        document.write('Your first number: ' + a + '<br>');
+        var b = Number(prompt('Enter the second number:'));
+        document.write('Your second number: ' + b + '<br>');
+        var c = Number(prompt('Enter the third number:'));
+        document.write('Your third number: ' + c + '<br>');
+        var d = Number(prompt('Enter the fourth number:'));
+        document.write('Your fourth number: ' + d + '<br>');
+
+        var greatest = a;
+
+        if (b > greatest) {
+            greatest = b;
+        }
+
+        if (c > greatest) {
+            greatest = c;
+        }
+
+        if (d > greatest) {
+            greatest = d;
+        }
+
+        document.write('The greatest number is: ' + greatest + '<br>');
+    </script>
+     
+</body>
+
+</html>

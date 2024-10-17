@@ -1,0 +1,27 @@
+body{
+    background-image: url('../background/download\ \(5\).jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-position: center; */
+}
+div{
+    height: 400px;
+    width: 400px;
+}
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: green;
+}
+p{
+    font-weight: 500;
+    font-family:monospace;
+    text-align: center;
+    color:teal;
+    letter-spacing: 5px;
+    font-variant: small-caps;
+    font-size: 17px;
+    line-height: 1.5;
+    background-color: rgba(179, 174, 174, 0.418);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var a = 1;
+        var length = 10;
+        var height = 5;
+
+        for (var i = a; i <= height; i++) {
+            if (i == a || i == height) {
+                for (var k = a; k <= length; k++) {
+                    document.write("*");
+                }
+            } else {
+                for (var k = a; k <= length - 2; k++) {
+                    document.write(" ");
+                }
+            }
+            document.write("*" + '<br>');
+
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

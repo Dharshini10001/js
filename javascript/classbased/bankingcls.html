@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation Selector</title>
+</head>
+<body>
+<script>
+    class Balance {
+        static userCount = 0; 
+        constructor(a, b, c) {
+            this.initial_amount = a;
+            this.credit_account = b;
+            this.debit_account = c;
+            Balance.userCount += 1;
+        }
+    
+        addition() {
+            console.log("Balance:", this.initial_amount + this.credit_account);
+        }
+    
+        subtraction() {
+            console.log("Balance:", this.initial_amount - this.debit_account);
+        }
+    
+      
+    }
+    
+    const q1 = new Balance(5000, 500, 200); 
+    q1.addition();
+    
+    const q2 = new Balance(5000, 100, 300);
+    q2.subtraction();
+    
+</script>    
+    
+</body>
+</html>

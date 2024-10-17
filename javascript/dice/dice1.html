@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="dice">
+        <div id="dicepart" ></div>
+    </div>
+    <input type="number" id="input">
+    <button>send</button>
+    <script>
+        const button = document.getElementById("button");
+        const input = document.getElementById("input");
+
+        input.onchange = () => {
+            const dicediv = document.getElementById("dice");
+            dicediv.style.display = "grid";
+            dicediv.style.gridTemplateColumns = "120px 120px 120px 120px";
+            dicediv.style.gap = "20px";
+
+
+            const dicepart = document.getElementById("dicepart");
+            var random = Math.floor(Math.random() * 6);
+
+            for (let i = 1; i <= input.value; i++) {
+                const newele = document.createElement("div");
+                newele.setAttribute("id", "dicepart");
+
+                newele.style.backgroundColor = "black";
+                newele.style.height = "100px";
+                newele.style.width = "100px";
+
+                dicediv.insertBefore(newele, dicepart);
+
+                for (let j = 0; j <= random; j++) {
+                    var span = document.createElement("span");
+                    span.style.backgroundColor = "red"
+                    span.style.border = "1px";
+                    span.style.height = "10px";
+                    span.style.width = "10px";
+                    span.style.borderRadius = "20px";
+                    dicediv.insertBefore(span,dicepart)
+                }
+            }
+        };
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span id="hour">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="sec">00</span>
+        <span id="ampm">am</span>
+    </div>
+
+    <script>
+
+        function Display() {
+            const date = new Date();
+            
+            let hr = date.getHours();
+            let mins = date.getMinutes();
+            let sec = date.getSeconds();
+
+            const hrs = document.getElementById('hour');
+            const min = document.getElementById('minutes');
+            const secs = document.getElementById('sec');
+            const ampm = document.getElementById('ampm');
+
+            // update
+            hrs.innerHTML = zero(hr);
+            min.innerHTML = zero(mins);
+            secs.innerHTML = zero(sec);
+            if (hr > 12) {
+                ampm.innerHTML = 'pm'
+            }
+            if (hr >= 12) {
+                hr = hr - 12;
+                hrs.innerHTML = zero(hr)
+            }
+
+            function zero(num) {
+               return  num < 10 ? `0${num}`: num
+            }
+        }
+
+        // Display()
+        setInterval(Display, 1000); // 1000ms = 1 sec
+
+    </script>
+
+</body>
+
+</html>

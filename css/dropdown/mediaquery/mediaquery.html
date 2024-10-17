@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        height: 200px;
+        width: 200px;
+        background-image: url(../1.jpg);
+        background-size: contain;
+        background-position: center;
+    }
+    @media screen and (max-width: 505px) {
+        .container{
+            /* background-color: yellow; */
+            background: none;
+            border: none;
+
+        }
+        .container h1{
+            color: red;
+        }
+        
+    }
+  
+</style>
+<body>
+    <div class="container">
+        <h1>IDM</h1>
+    </div>
+</body>
+</html>

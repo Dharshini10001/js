@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url('/javascript/Date&time/desktop-wallpaper-pin-on-in-2020-colored-collage.jpg');
+    }
+
+    button {
+        margin-top: 400px;
+        border: none;
+        background-color: transparent;
+        color: white;
+
+    }
+</style>
+
+<body>
+    <button>
+        <span id="hours" style="font-size:100px;">00</span>
+        <span style="font-size:80px;">:</span>
+        <span id="minutes" style="font-size:100px;">00</span>
+        <span id="ampm" style="font-size:50px;">AM</span><br> 
+        <span id="days" style="font-size:50px;"></span>&nbsp;&nbsp;
+        <span id="dates" style="font-size:50px;"></span>&nbsp;&nbsp;
+        <span id="month" style="font-size:50px;"></span></button>
+
+    <script>
+        const btn = document.querySelector('button');
+        btn.onclick = () => {
+            window.location.href = 'http://127.0.0.1:5500/javascript/Date&time/newwindow.html';
+        }
+
+        var today = new Date();
+        let hr = today.getHours();
+        let mins = today.getMinutes();
+        var date = today.getDate();
+        // console.log(date)
+        var day = today.getDay();
+        var daylist = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satursday"];
+        var month = today.getMonth();
+        var monthlist = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        let hrs = document.getElementById('hours');
+        let min = document.getElementById('minutes');
+        let ampm = document.getElementById('ampm')
+        let days = document.getElementById('days');
+        let mon = document.getElementById('month');
+        let dat = document.getElementById('dates');
+
+
+        hrs.innerHTML = zero(hr);
+        min.innerHTML = zero(mins);
+        days.innerHTML = daylist[day];
+        mon.innerHTML = monthlist[month];
+        dat.innerHTML = date;
+        if (hr > 12) {
+            ampm.innerHTML = 'PM'
+        }
+        if (hr >= 12) {
+            hr = hr - 12;
+            hrs.innerHTML = zero(hr)
+        }
+        function zero(num) {
+            return num < 10 ? `0${num}` : num
+        }
+        setInterval(Display, 1000); // 1000ms = 1
+    </script>
+</body>
+
+</html>

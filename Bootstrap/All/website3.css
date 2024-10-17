@@ -1,0 +1,258 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ .nav-one{
+    height: 50px;
+}
+.head1{
+    color: orange;
+    font-size: 50px;
+    font-weight: bold;
+}
+.head2{
+    color: rgb(20, 163, 20);
+    font-size: 50px;
+    font-weight: bold;
+}
+.nav1{
+    background-color: rgb(72, 148, 72) ;
+    position: sticky;
+    /* width: 100%; */
+}
+.head3{
+    color: white;
+}
+.head4{
+    color: orange;
+}
+.nav1 ul li:hover{
+    background-color: orange;
+}
+.but1{
+    width: 150px;
+    height: 60px;
+    background-color:rgb(20, 163, 20) ;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.but2{
+    width: 150px;
+    height: 60px;
+    background-color:orange ;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+.div1{
+    text-align: left ;
+}
+.but1:hover{
+    color: black;
+}
+.but2:hover{
+    color: black;
+}
+.d{
+    font-size: 80px;
+}
+.c{
+    font-size: 30px;
+}
+
+.div3{
+    background-image: url('istockphoto-1288664808-612x612.jpg');
+    background-size: cover;
+    color: black;
+    width: 450px;
+}
+.div4{
+    background-image: url('../Bootstrap/1.webp');
+    background-size: cover;
+    color: white;
+    width: 450px;
+}
+.img1{
+    border: 3px solid  rgb(20, 163, 20) ;
+}
+.con1{
+    background-color:rgb(20, 163, 20) ;
+}
+.but3{
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-color: rgb(20, 163, 20);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.but3:hover{
+    color: black;
+}
+.head5{
+    font-size: 50px;
+}
+.h4{
+    color:rgb(20, 163, 20) ;
+}
+.contain1{
+    text-align: center;
+    width: 300px;
+    margin-left: 40px;
+}
+.contain1:hover{
+    background-color:  rgb(38, 177, 38);
+    color: white;
+}
+.he5{
+    text-align: center;
+}
+.contain2{
+    background-color:rgb(20, 163, 20) ;
+    text-align: center;
+}
+.iv{
+    width: 250px;
+    height: 300px;
+}
+.iv img{
+    height: 200px;
+    width: 180px;
+}
+.iv h3{
+    font-size: 16px;
+    text-align: center;
+}
+.contain4{
+    position: relative;
+    background-color: transparent;
+    text-align: center;
+}
+.contain3{
+    height: 300px;   
+    margin-top: -200px;
+    top: 100px;
+    background-color:rgb(20, 163, 20);
+}
+.one{
+    margin-left:-50px;
+    margin-top: 30px;
+}
+.two{
+    margin-right:-50px;
+    margin-top: 50px;
+}
+.ter{
+    width: 700px;
+    height: 400px;
+    background-color: rgba(20, 163, 20, 0.637);
+    text-align: center;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    color: white;
+    padding: 40px;
+}
+.ter img{
+    padding: 10px;
+    border: 5px solid orange;
+}
+.ter1{
+    position: absolute;
+}
+.cin{
+    margin-top:400px ;
+}
+.onu{
+    position: relative;
+}
+.ullam{
+    border-radius: 0;
+    list-style-type: none;
+    position: absolute;
+    top: 0px;
+    background-color: orange;
+    left: 300px;
+}
+.contain6{
+    background-size: cover;
+    background-image: url(../Bootstrap/blog-2.jpg);
+    width: 350px;
+    height: 500px;
+    border-image: fill 0 linear-gradient(rgba(255, 255, 255, 0.438),rgba(24, 155, 24, 0.445),rgba(5, 70, 5, 0.445) ) ;
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-top: 370px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.contain7{
+    background-size: cover;
+    background-image: url(../Bootstrap/blog-3.jpg);
+    width: 350px;
+    height: 500px;
+    border-image: fill 0 linear-gradient(rgba(255, 255, 255, 0.438),rgba(24, 155, 24, 0.445),rgba(5, 70, 5, 0.445) ) ;
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-top: 370px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+
+}
+.contain8{
+    background-size: cover;
+    background-image: url(../Bootstrap/blog-1.jpg);
+    width: 350px;
+    height: 500px;
+    border-image: fill 1 linear-gradient(rgba(255, 255, 255, 0.438),rgba(24, 155, 24, 0.445),rgba(5, 70, 5, 0.445) ) ;
+    margin-top: 30px;
+    margin-right: 30px;
+    padding-top: 370px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+
+}
+.blog{
+    margin-top: 70px;
+}
+.rin{
+    margin-top: 50px;
+}
+/* .foot{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-image: url(../Bootstrap/footer.png);
+    background-size: cover;
+    border-image: fill 0 linear-gradient(rgba(3, 128, 3, 0.753),rgba(24, 155, 24, 0.445),rgba(5, 70, 5, 0.76) ) ;
+    margin-top: 80px;
+    color: white;   
+}
+.foot ul{
+    padding-top: 40px;
+
+}
+.foot li{
+    list-style: none;
+}
+.li{
+    font-size: 20px;
+}
+.foot-2{
+    background-color: orange;
+    color: white;
+    
+}
+.foot-2 button{
+    background-color: green;
+    color: white;
+    border: none;
+    height: 60px;
+}
+.foot-2 input{
+    height: 60px;
+} */

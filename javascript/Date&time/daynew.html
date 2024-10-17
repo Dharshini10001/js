@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password</title>
+</head>
+
+<body>
+    <form id="passwordForm">
+        <label for="pass">Enter Password:</label>
+        <input type="password" id="pass" name="password" >
+        <button type="button" onclick="checkPassword()">Submit</button>
+    </form>
+    <script>
+
+        function checkPassword() {
+            let passwordInput = document.getElementById('pass').value;
+            const correctPassword = "dharhini";
+
+            if (correctPassword === passwordInput) {
+                window.location.href = 'C:/Users/lenova/Desktop/idm/javascript/Date&time/day.html'; 
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+        
+    </script>
+ 
+</body>
+
+</html>

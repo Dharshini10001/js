@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+            height: 2px;
+            width: 200px;
+            position: absolute;
+            animation-name: move;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+            /* animation-timing-function: linear; */
+            animation-delay: 2s;
+    }
+    @keyframes move {
+        0%{
+                top: 0%;
+                left: 0px;
+                background-color:blue;
+                border: 1px yellow;
+
+            }
+            25%{
+                left: 25%;
+                top: 0px;
+                background-color:rgb(71, 71, 252);
+                border: 1px yellow;
+
+            } 
+            50%{
+                left: 50%px;
+                top: 0px;
+                background-color:rgb(140, 140, 255) ;
+                border: 1px yellow;
+
+            } 
+            75%{
+                left: 75%;
+                top: 0px;
+                background-color: rgb(179, 179, 247);
+                border: 1px yellow;
+
+            }
+            100%{
+                left: 100%;
+                top: 0px;
+                background-color: white;
+                border: 1px yellow;
+
+            }
+        }
+        #form1{
+            padding-top: 40px;
+            height:400px;
+            width: 350px;
+            position: absolute;
+            top: 100px;
+            left: 500px;
+            background: linear-gradient(160deg, rgb(1, 78, 114), rgb(44, 184, 184), rgb(135, 233, 233), rgb(206, 250, 250), rgb(243, 221, 253), rgb(231, 202, 245),rgb(255, 232, 202));
+            color: rgb(212, 212, 212);
+            font-size: 18px;
+            border: 5px solid rgb(2, 48, 66);
+            box-shadow: 0 0 10px 10px rgb(194, 194, 194);
+        }
+        #form1 label{
+            margin-left: 30px;
+        }
+        #form1 input{
+            margin: 10px;
+            height:30px;
+            width: 150px;
+        }
+        #form1 input:nth-child(2){
+            margin-left: 5px;
+        }
+        #form1 button{
+            margin-top: 50px;
+            margin-left: 120px;
+        }
+</style>
+<body>
+    <div id="div1"></div>
+    <div id="form1">
+        <label for="">UserName:</label>
+        <input type="text"><br>
+        <label for="">Password:</label>
+        <input type="password" name="" id="">
+        <button>Submit</button>
+    </div>
+</body>
+</html>

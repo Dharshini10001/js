@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+</head>
+
+<body>
+    <h1>welcome to the Login Page</h1>
+    <form id="myForm">
+        <label for="name">Name: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="fname" id="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="fpass" id="password" required>
+        <div id="passwordHelpInline" class="form-text"></div><br>
+
+        <label for="email">Email Id:</label>&nbsp;&nbsp;
+        <input type="email" name="femail" id="email" required><br><br>
+
+        <label for="tele">Phone No:</label>
+        <input type="tel" name="ftel" id="tele" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        const name = document.getElementById('name')
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const form = document.getElementById('myForm');
+        const passwordHelpInline = document.getElementById('passwordHelpInline');
+
+        localStorage.setItem('name', name.value);
+
+        email.addEventListener('input', emailchange);
+        password.addEventListener('input', passwordstore);
+
+        function emailchange() {
+            const emailvalue = email.value;
+            const emailpattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+            if (emailpattern.test(emailvalue)) {
+                // email.setCustomValidity('');
+                localStorage.setItem('email', emailvalue.value);
+            } else {
+                email.setCustomValidity('Invalid email format.');
+
+            }
+        }  
+        function passwordstore() {
+            const passwordvalue = password.value;
+            const passwordpattern = /^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*_)(?!.*\W)(?!.* ).{8,16}$/;
+            if (passwordpattern.test(passwordvalue)) {
+                passwordHelpInline.textContent = "Valid password";
+                password.setCustomValidity('');
+                localStorage.setItem('password', passwordvalue.value);
+            } else {
+                passwordHelpInline.textContent = "Invalid password";
+                password.setCustomValidity('Password must be 8-16 characters long, include at least one uppercase letter, one lowercase letter, one digit, and one underscore.');
+            }
+        }
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const isEmailValid = email.checkValidity();
+            const isPasswordValid = password.checkValidity();
+
+            if (isEmailValid && isPasswordValid) {
+                fetch('https://66cdb1908ca9aa6c8ccb47ad.mockapi.io/reply', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        name: document.getElementById('name').value,
+                        age: 18,
+                        address: '24, old street, Salem',
+                        phoneNo: document.getElementById('tele').value
+                    })
+                })
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data);
+                    window.location.href = 'home.html';
+                })
+                .catch((error) => console.error('Error:', error));
+            } else {
+                alert('Please correct the errors in the form.');
+            }
+        });
+    </script>
+</body>
+
+</html>

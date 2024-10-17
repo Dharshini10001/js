@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod, perspiciatis doloribus amet ex obcaecati.
+            Repellendus, quasi deserunt. Doloremque adipisci natus nihil ad aspernatur voluptates error omnis magnam
+            ipsa sed.</p>
+        <button onclick="removeent()">remove</button>
+    </div>
+    <div id="info"></div>
+
+    <script>
+        const div = document.getElementById('demo');
+        div.addEventListener('mouseenter', display)
+        function display() {
+            document.getElementById('info').textContent += "mouseenter "
+        }
+
+        function removeent() {
+            div.removeEventListener('mouseenter', display)
+        }
+    </script>
+
+</body>
+</html>

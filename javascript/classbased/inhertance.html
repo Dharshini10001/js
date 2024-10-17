@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Employee {
+
+            Employeename() {
+                document.write("employee name:", this.Name +"<br>")
+            }
+
+        }
+
+        class Employeeid extends Employee {
+
+            Employeesalary() {
+                document.write("employee salary:", this.salary +"<br>")
+
+            }
+
+        }
+
+
+        class EmployeeDetails extends Employeeid {
+            constructor(a, b, c) {
+                super()
+                this.Name = a
+                this.salary = b;
+                this.intime = c
+            }
+
+            Employeintime() {
+                document.write("employee intime:", this.intime +"<br>")
+
+            }
+        }
+
+        const e1 = new EmployeeDetails('dharshini',23098,2.05)
+        e1.Employeename();
+        e1.Employeesalary();
+        e1.Employeintime(); 
+    </script>
+</body>
+
+</html>

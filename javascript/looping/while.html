@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // while (condition) {
+
+        // }
+        // let i = 0;
+        // while (i <= 3) {
+        //     document.write(i +"<br>");
+        //     i++
+        // }
+
+        // let j = 0;
+        //         do {
+        //             document.write(j+"<br>")
+        //             j++
+        //             // break;
+        //             continue
+        //         } while (j<=5);
+        // document.write(j+"<br>")
+
+
+        //  for of - array 
+        const arr = [10, 20, 30, 40, 50];
+        for (let key of arr) {
+            document.write(key + "<br>")
+        }
+        //  for in- object 
+        const data = {
+            name: 'pavi',
+            age: '23'
+        }
+        for (let person in data) {
+            document.write(data[person] + "<br>")
+        }
+
+
+        const add = (a) => {
+            document.write(a * a)
+        }
+
+        add(3)
+
+
+
+    </script>
+
+</body>
+
+</html>
