@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amiso - Quality Cleaning</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="logo.webp" alt="Amiso Logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a href="#quote" class="btn btn-primary ms-3">Get a Quote</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel Hero Section -->
+  <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="slide2.jpg" class="d-block w-100" alt="Hero Image 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>A Tradition of Quality Cleaning</h1>
+          <p>Renew your look with our professional cleaning services.</p>
+          <a href="#contact" class="btn btn-light">Contact Us</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="hero.jpg" class="d-block w-100" alt="Hero Image 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Fast and Efficient Cleaning</h1>
+          <p>Let us keep your place spotless and save you time.</p>
+          <a href="#contact" class="btn btn-light">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </header>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container text-center">
+      <h2>Our Great Services</h2>
+      <p class="mb-4">A clean house is a happy place!</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="service1.jpg" class="card-img-top" alt="Service Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Professional Cleaning</h5>
+              <p class="card-text">High-quality cleaning services that make your space shine.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="service2.jpg" class="card-img-top" alt="Service Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Fast and Efficient</h5>
+              <p class="card-text">Our team uses efficient methods to save you time.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="service3.jpg" class="card-img-top" alt="Service Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Renew Your Look</h5>
+              <p class="card-text">Transform your home with our expert cleaning solutions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-5">
+    <div class="container text-center">
+      <h2>Meet Our Team</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="team1.jpg" class="img-fluid rounded-circle" alt="Team Member">
+            <h5>Monica Gordon</h5>
+            <p>Home Cleaner</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="team2.jpg" class="img-fluid rounded-circle" alt="Team Member">
+            <h5>Laura Jones</h5>
+            <p>Cleaner</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            <img src="team3.jpg" class="img-fluid rounded-circle" alt="Team Member">
+            <h5>Sara Ryan</h5>
+            <p>House Cleaner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="promo-video" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2>Watch Our Services in Action</h2>
+      <video controls width="100%" class="my-4">
+        <source src="promo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-5">
+    <div class="container text-center">
+      <h2>Recent News</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="blog1.jpg" class="card-img-top" alt="Blog Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Temporary Ruling Issued</h5>
+              <p class="card-text">Cleaning has met the demands of the modern world.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="blog2.jpg" class="card-img-top" alt="Blog Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Company Expands to California</h5>
+              <p class="card-text">Bringing our services to a new region with the same high quality.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="blog3.jpg" class="card-img-top" alt="Blog Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Temporary Ruling Issued</h5>
+              <p class="card-text">Working to maintain clean spaces and happy clients.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <footer id="contact" class="py-5 bg-dark text-white text-center">
+    <div class="container">
+      <p>&copy; 2023 Amiso. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

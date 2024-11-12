@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Page</title>
+
+    <style>
+        .stars {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .star {
+            font-size: 40px;
+            color: gray;
+        }
+
+        .star.selected {
+            color: yellow;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .col-12 {
+            width: 45%;
+        }
+
+        textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        h1, p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <!-- Input Section -->
+        <div class="col-12">
+            <label for="Name">Name:</label>
+            <input type="text" name="name" id="Name" style="color: palevioletred;"><br>
+            <label for="star">Star:</label>
+            <div class="stars" id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment"></textarea>
+            <button onclick="send()">Submit</button>
+        </div>
+
+        <!-- Display Result Section -->
+        <div id="result" class="col-12">
+            <h1 id="demo"  style="color: rgb(5, 156, 5)"></h1>
+            <p id="comments" style="color: rgb(43, 190, 43)"></p>
+            <p id="ratingResult" style="color: rgb(0, 250, 0)"></p>
+        </div>
+    </div>
+
+    <script>
+        // Select all the stars
+        const stars = document.querySelectorAll('.star');
+        let selectedRating = 0;
+
+        let resultText = '';
+        // Function to update the stars based on the rating
+        function updateStars(rating) {
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.classList.add('selected');  // Change star color to gold
+                } else {
+                    star.classList.remove('selected');  // Reset color to gray
+                }
+            });
+        }
+
+        // Add click event listener to each star
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                selectedRating = star.getAttribute('data-value');
+                updateStars(selectedRating);
+
+                // Check rating using an if statement
+                if (selectedRating == 5) {
+                    resultText = 'Excellent! You gave a 5-star rating.';
+                } else if (selectedRating == 4) {
+                    resultText = 'Great! You gave a 4-star rating.';
+                } else if (selectedRating == 3) {
+                    resultText = 'Good! You gave a 3-star rating.';
+                } else if (selectedRating == 2) {
+                    resultText = 'Fair! You gave a 2-star rating.';
+                } else if (selectedRating == 1) {
+                    resultText = 'Poor! You gave a 1-star rating.';
+                }
+
+                // Display result
+            });
+        });
+        
+        function send() {
+            const name1 = document.getElementById('Name').value;
+            
+            const comment1 = document.getElementById('comment').value;
+            
+            if (!name1 || !comment1 || selectedRating == 0) {
+                alert('Please fill in all fields and select a star rating.');
+                // return;
+            }
+            
+            // Display name, comment, and rating
+            document.getElementById('demo').innerHTML = `Name: ${name1}`;
+            document.getElementById('comments').innerHTML = `Comment: ${comment1}`;
+            document.getElementById('ratingResult').textContent = resultText;
+            name1= " ";
+            comment1= " ";
+        }
+        // selectedRating=""
+    </script>
+</body>
+
+</html>

@@ -5,48 +5,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <label for="Name">Name:</label>
-    <input type="text" name="name" id="Name">
-    <label for="star">Star:</label>
-    <span><input type="checkbox" name="star1" id="Star1"></span>
-    <span><input type="checkbox" name="star2" id="Star2"></span>
-    <span><input type="checkbox" name="star3" id="Star3"></span>
-    <span><input type="checkbox" name="star4" id="Star4"></span>
-    <label for="comment">Comment</label>
-    <textarea name="comment" id="comment"></textarea>
-    <button onclick="send()">Submit</button>
-    <div id="result">
 
+    <style>
+        .stars {
+            display: flex;
+            cursor: pointer;
+        }
+
+        .star {
+            font-size: 40px;
+            color: gray;
+        }
+
+        .star.selected {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl ">
+            <label for="Name">Name:</label>
+            <input type="text" name="name" id="Name"><br>
+            <label for="star">Star:</label>
+            <div class="stars" id="starRating">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+            </div>
+
+
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment"></textarea>
+            <button onclick="send()">Submit</button>
+        </div>
+        <div id="result col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl ">
+            <h1 id="demo"></h1>
+            <p id="comments"></p>
+            <p id="ratingResult"></p>
+
+        </div>
     </div>
 
-    <h1 id="demo"></h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
         </script>
     <script>
-        // const name1 = document.getElementById('Name')
-        // const checkbox1 = document.getElementById('Star1')
-        // const checkbox2 = document.getElementById('Star2')
-        // const checkbox3 = document.getElementById('Star3')
-        // const checkbox4 = document.getElementById('Star4')
-        // const comment1 = document.getElementById('comment')
-        // const result = document.getElementById('result')
-
-
         function send() {
             const name1 = document.getElementById('Name')
-            const checkbox1 = document.getElementById('Star1')
-            const checkbox2 = document.getElementById('Star2')
-            const checkbox3 = document.getElementById('Star3')
-            const checkbox4 = document.getElementById('Star4')
+            // const checkbox1 = document.getElementById('Star1')
+            // const checkbox2 = document.getElementById('Star2')
+            // const checkbox3 = document.getElementById('Star3')
+            // const checkbox4 = document.getElementById('Star4')
+
+            // Select all the stars
+            const stars = document.querySelectorAll('.star');
+            let selectedRating = 0;
+
+            // Function to update the stars based on the rating
+            function updateStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index < rating) {
+                        star.classList.add('selected');  // Change star color to gold
+                    } else {
+                        star.classList.remove('selected');  // Reset color to gray
+                    }
+                });
+            }
+
+            // Add click event listener to each star
+            stars.forEach(star => {
+                star.addEventListener('click', () => {
+                    selectedRating = star.getAttribute('data-value');
+                    updateStars(selectedRating);
+
+                    // Check rating using an if statement
+                    let resultText = '';
+                    if (selectedRating == 5) {
+                        resultText = 'Excellent! You gave a 5-star rating.';
+                    } else if (selectedRating == 4) {
+                        resultText = 'Great! You gave a 4-star rating.';
+                    } else if (selectedRating == 3) {
+                        resultText = 'Good! You gave a 3-star rating.';
+                    } else if (selectedRating == 2) {
+                        resultText = 'Fair! You gave a 2-star rating.';
+                    } else if (selectedRating == 1) {
+                        resultText = 'Poor! You gave a 1-star rating.';
+                    }
+
+                    // Display result
+                    document.getElementById('ratingResult').textContent = resultText;
+                });
+            });
             const comment1 = document.getElementById('comment')
             const result = document.getElementById('result')
 
             document.getElementById('demo').innerHTML += name1.value
-            
-            
+            document.getElementById('comments').innerHTML += comment1.value
+
+
         }
 
 

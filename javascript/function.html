@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="output">This is the age of him:</p>
+    <script>
+        function car(name,model,year){
+            this.name=name;
+            this.model=model;
+            this.year=year;
+        }
+        var new_car=new car("kia","OD",2025);
+        document.getElementById("demo").innerHTML += JSON.stringify(new_car);
+          
+    </script>
+</body>     
+</html>

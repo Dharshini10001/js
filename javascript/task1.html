@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Rating System</title>
+    <style>
+        .stars {
+            display: flex;
+            cursor: pointer;
+        }
+        .star {
+            font-size: 40px;
+            color: gray;
+        }
+        .star.selected {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Rate this product:</h1>
+<div class="stars" id="starRating">
+    <span class="star" data-value="1">★</span>
+    <span class="star" data-value="2">★</span>
+    <span class="star" data-value="3">★</span>
+    <span class="star" data-value="4">★</span>
+    <span class="star" data-value="5">★</span>
+</div>
+
+<p id="ratingResult"></p>
+
+<script>
+    // Select all the stars
+    const stars = document.querySelectorAll('.star');
+    let selectedRating = 0;
+
+    // Function to update the stars based on the rating
+    function updateStars(rating) {
+        stars.forEach((star, index) => {
+            if (index < rating) {
+                star.classList.add('selected');  // Change star color to gold
+            } else {
+                star.classList.remove('selected');  // Reset color to gray
+            }
+        });
+    }
+
+    // Add click event listener to each star
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            selectedRating = star.getAttribute('data-value');
+            updateStars(selectedRating);
+
+            // Check rating using an if statement
+            let resultText = '';
+            if (selectedRating == 5) {
+                resultText = 'Excellent! You gave a 5-star rating.';
+            } else if (selectedRating == 4) {
+                resultText = 'Great! You gave a 4-star rating.';
+            } else if (selectedRating == 3) {
+                resultText = 'Good! You gave a 3-star rating.';
+            } else if (selectedRating == 2) {
+                resultText = 'Fair! You gave a 2-star rating.';
+            } else if (selectedRating == 1) {
+                resultText = 'Poor! You gave a 1-star rating.';
+            }
+
+            // Display result
+            document.getElementById('ratingResult').textContent = resultText;
+        });
+    });
+</script>
+
+</body>
+</html>

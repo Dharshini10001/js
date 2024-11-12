@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <title> Conditional statement is optional in for loop </title>
+</head>
+
+<body>
+  <div id="demo"></div>
+  <script>
+    let demo = document.getElementById("demo");
+    let arr = [1, 4, 45, 23, 64, 63, 242, 246, 765, 73, 27]
+    var p = 0;
+    for (; ; p++) {
+      if (p >= arr.length) {
+        document.write("invalid")
+        break;
+      }
+      demo.innerHTML += "[" + p + "] " + arr[p]+ "<br>";
+    }
+  </script>
+</body>
+
+</html>
